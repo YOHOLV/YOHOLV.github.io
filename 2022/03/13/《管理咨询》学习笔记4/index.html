@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="吕泳宏的个人博客">
+  <link 
+    rel="icon" 
+    href="/imag/star.png">
+  <title>《管理咨询》学习笔记4</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="《管理咨询》学习笔记4">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2022/03/13/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="/imag/我的头像.jpg">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2022-03-13">
+      <meta 
+        property="og:article:modified_time" 
+        content="2022-03-13">
+      <meta 
+        property="og:article:author" 
+        content="吕泳宏(Yonghong Lv)">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="经济管理">
+        
+      
+    
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/imag/star.png" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">吕泳宏的个人博客</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          Home
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          Archive
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          Tags
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          Categories
+        
+      </a>
+    
+      <a 
+        href="/about" 
+        class="navbar-menu-item">
+        
+          About
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          Friends
+        
+      </a>
+    
+    <a 
+      class="navbar-menu-item darknavbar" 
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </a>
+    <a 
+      class="navbar-menu-item searchnavbar" 
+      id="search">
+      <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i>
+    </a>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      《管理咨询》学习笔记4
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2022-03-13T13:02:47.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2022-03-13</span>
+    </time>
+    
+    
+      <span class="dot"></span>
+      <span>1.1k words</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86/" 
+            class="post-meta-link">
+            经济管理
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <p>、</p>
+<blockquote>
+<p>互联时代，知识浩如烟海，很高兴本笔记能被您阅读到。《管理咨询》学习笔记专题由我和同学<strong>王紫钰</strong>合作撰写，记录了我们在天津大学研究生在读期间选修<a target="_blank" rel="noopener" href="https://www.icourse163.org/course/JNU-1002534017?tid=1003162005">《管理咨询》</a>课程时的学习内容，之中加入了部分我们个人见解和阅读资料，仅供个人参考使用。<br>原课程视频来自中国mooc，是一门由暨南大学管理学院院长<a target="_blank" rel="noopener" href="https://qgx.jnu.edu.cn/2020/1225/c9136a577173/page.htm">李从东</a>讲授的国家一流学科建设精品课程，李从东老师也曾在天津大学经管学部从教。</p>
+</blockquote>
+<h1 id="2-16-如何推介解决方案"><a href="#2-16-如何推介解决方案" class="headerlink" title="2-16 如何推介解决方案"></a>2-16 如何推介解决方案</h1><h2 id="取得客户的信任（基础）"><a href="#取得客户的信任（基础）" class="headerlink" title="取得客户的信任（基础）"></a>取得客户的信任（基础）</h2><h3 id="信任的来源："><a href="#信任的来源：" class="headerlink" title="信任的来源："></a>信任的来源：</h3><ul>
+<li>咨询者的品牌影响力</li>
+<li>咨询团队的既往成果以及业内口碑</li>
+<li>咨询师个人<h2 id="培训是方案推介不可或缺的组成部分"><a href="#培训是方案推介不可或缺的组成部分" class="headerlink" title="培训是方案推介不可或缺的组成部分"></a>培训是方案推介不可或缺的组成部分</h2></li>
+<li>与方案有关的知识分阶段、分层次地入眼、入脑、入心，使客户对方案充满期待、坚信不疑<h2 id="基于事实的严谨分析是方案推介的前奏"><a href="#基于事实的严谨分析是方案推介的前奏" class="headerlink" title="基于事实的严谨分析是方案推介的前奏"></a>基于事实的严谨分析是方案推介的前奏</h2></li>
+<li>客户深知：好产品，好工匠<h3 id="汇报是方案推介的最后阶段：系统化"><a href="#汇报是方案推介的最后阶段：系统化" class="headerlink" title="汇报是方案推介的最后阶段：系统化"></a>汇报是方案推介的最后阶段：系统化</h3><h3 id="汇报形式"><a href="#汇报形式" class="headerlink" title="汇报形式"></a>汇报形式</h3></li>
+<li>正式汇报（圆桌会议、蓝皮书）</li>
+<li>非正式沟通（电话、白板等）<h3 id="如何向客户传递信息"><a href="#如何向客户传递信息" class="headerlink" title="如何向客户传递信息"></a>如何向客户传递信息</h3></li>
+<li>清晰的逻辑框架</li>
+<li>言简意赅的表达（电梯法则）</li>
+<li>事先沟通<h3 id="表达技巧"><a href="#表达技巧" class="headerlink" title="表达技巧"></a>表达技巧</h3></li>
+<li>结构化发言：先从结论讲起，中心开花，逐层渐次展开，简单的就是最好的</li>
+<li>形象化表达</li>
+<li>用图说话（概念图、比喻图、数据图）</li>
+<li>推介谨记</li>
+<li>对解决方案的深度理解</li>
+</ul>
+<h1 id="2-17-方案实施中的主客体关系"><a href="#2-17-方案实施中的主客体关系" class="headerlink" title="2-17 方案实施中的主客体关系"></a>2-17 方案实施中的主客体关系</h1><h2 id="谁是问题的、解决问题的主体"><a href="#谁是问题的、解决问题的主体" class="headerlink" title="谁是问题的、解决问题的主体"></a>谁是问题的、解决问题的主体</h2><blockquote>
+<p>在咨询中咨询公司是这个活动的主体，在咨询实施时，企业是咨询实施的主体</p>
+</blockquote>
+<h2 id="管理咨询主体：咨询师团队（医生）"><a href="#管理咨询主体：咨询师团队（医生）" class="headerlink" title="管理咨询主体：咨询师团队（医生）"></a>管理咨询主体：咨询师团队（医生）</h2><blockquote>
+<p>咨询主体责任：科学地为委托人量身定制短期改善的解决方案和中长期发展的解决方案，并协助实施</p>
+</blockquote>
+<h2 id="实施主体：委托组织（病患）"><a href="#实施主体：委托组织（病患）" class="headerlink" title="实施主体：委托组织（病患）"></a>实施主体：委托组织（病患）</h2><blockquote>
+<p>实施主体责任：全面配合咨询师调查分析，与咨询师共同设计解决方案，根据自身情况在充分征询咨询师意见后策略性地实施解决方案</p>
+</blockquote>
+<ul>
+<li>咨询团队不是投资人，在公司治理结构中没有角色（除非在咨询合同中设定咨询回报为股份转移者）</li>
+<li>企业的领导和运营团队是咨询解决方案的实践者</li>
+<li>企业是咨询解决方案实施后果（损益）的最主要承担者<h2 id="解决方案周期"><a href="#解决方案周期" class="headerlink" title="解决方案周期"></a>解决方案周期</h2><h3 id="形成阶段"><a href="#形成阶段" class="headerlink" title="形成阶段"></a>形成阶段</h3><h3 id="评估和修订环节"><a href="#评估和修订环节" class="headerlink" title="评估和修订环节"></a>评估和修订环节</h3><h3 id="验收环节"><a href="#验收环节" class="headerlink" title="验收环节"></a>验收环节</h3></li>
+</ul>
+<h1 id="2-18-合作产生竞争力"><a href="#2-18-合作产生竞争力" class="headerlink" title="2-18 合作产生竞争力"></a>2-18 合作产生竞争力</h1><h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><ul>
+<li>信任</li>
+<li>顾问尽心尽力</li>
+<li>不让咨询价格限制了咨询价值<h2 id="合作机制"><a href="#合作机制" class="headerlink" title="合作机制"></a>合作机制</h2><h3 id="组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组"><a href="#组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组" class="headerlink" title="组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组"></a>组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组</h3></li>
+<li>联席委员会：监督、评价、指导、沟通、讨论、决策</li>
+<li>专项项目工作组：协调、监控、讨论</li>
+<li>核心业务组：（深刻理解）按程序逐步推进<h3 id="工作运行机制：围绕项目计划，定期综合会商与专项会商相结合"><a href="#工作运行机制：围绕项目计划，定期综合会商与专项会商相结合" class="headerlink" title="工作运行机制：围绕项目计划，定期综合会商与专项会商相结合"></a>工作运行机制：围绕项目计划，定期综合会商与专项会商相结合</h3><h3 id="法制：联席委员会的工作机制应纳入合同附件"><a href="#法制：联席委员会的工作机制应纳入合同附件" class="headerlink" title="法制：联席委员会的工作机制应纳入合同附件"></a>法制：联席委员会的工作机制应纳入合同附件</h3><h3 id="有效合作三个层次：效率、效果、效益"><a href="#有效合作三个层次：效率、效果、效益" class="headerlink" title="有效合作三个层次：效率、效果、效益"></a>有效合作三个层次：效率、效果、效益</h3></li>
+</ul>
+<h1 id="咨询实施中的“授人以渔”"><a href="#咨询实施中的“授人以渔”" class="headerlink" title="咨询实施中的“授人以渔”"></a>咨询实施中的“授人以渔”</h1><h2 id="管理专业知识转移途径"><a href="#管理专业知识转移途径" class="headerlink" title="管理专业知识转移途径"></a>管理专业知识转移途径</h2><ul>
+<li>咨询中的培训</li>
+<li>项目合作机制</li>
+<li>咨询程序、咨询工具和咨询方法</li>
+<li>实施新的管理模式、管理系统</li>
+</ul>
+<blockquote>
+<p>人是管理知识能力第一载体</p>
+</blockquote>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h3 id="扶上马"><a href="#扶上马" class="headerlink" title="扶上马"></a>扶上马</h3><ul>
+<li>咨询方给予人员支持</li>
+<li>解释性咨询</li>
+<li>修正性支持<h3 id="送一程"><a href="#送一程" class="headerlink" title="送一程"></a>送一程</h3></li>
+</ul>
+<h2 id="培训的分类"><a href="#培训的分类" class="headerlink" title="培训的分类"></a>培训的分类</h2><ul>
+<li>沟通培训</li>
+<li>引导培训</li>
+<li>常规普及性培训</li>
+<li>专业性操作培训<h2 id="培训三段论"><a href="#培训三段论" class="headerlink" title="培训三段论"></a>培训三段论</h2> <img src="/imag/%E5%9F%B9%E8%AE%AD%E4%B8%89%E6%AE%B5%E8%AE%BA.jpg" alt="img" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/imag/%E5%9F%B9%E8%AE%AD%E4%B8%89%E6%AE%B5%E8%AE%BA.jpg" class="lozad post-image"></li>
+</ul>
+<h2 id="双向知识转移"><a href="#双向知识转移" class="headerlink" title="双向知识转移"></a>双向知识转移</h2><ul>
+<li>从对象企业学习新情况、新问题、新办法</li>
+<li>到群众中去</li>
+</ul>
+
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            吕泳宏(Yonghong Lv)
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2022/03/13/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04/">
+            http://example.com/2022/03/13/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2022/03/07/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">Next</div>
+          
+            <div class="nav-title">《管理咨询》学习笔记3 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-16-%E5%A6%82%E4%BD%95%E6%8E%A8%E4%BB%8B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">2-16 如何推介解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%96%E5%BE%97%E5%AE%A2%E6%88%B7%E7%9A%84%E4%BF%A1%E4%BB%BB%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-text">取得客户的信任（基础）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E4%BB%BB%E7%9A%84%E6%9D%A5%E6%BA%90%EF%BC%9A"><span class="toc-text">信任的来源：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E4%B8%8D%E5%8F%AF%E6%88%96%E7%BC%BA%E7%9A%84%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-text">培训是方案推介不可或缺的组成部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E4%BA%8B%E5%AE%9E%E7%9A%84%E4%B8%A5%E8%B0%A8%E5%88%86%E6%9E%90%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%89%8D%E5%A5%8F"><span class="toc-text">基于事实的严谨分析是方案推介的前奏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E6%9C%80%E5%90%8E%E9%98%B6%E6%AE%B5%EF%BC%9A%E7%B3%BB%E7%BB%9F%E5%8C%96"><span class="toc-text">汇报是方案推介的最后阶段：系统化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E5%BD%A2%E5%BC%8F"><span class="toc-text">汇报形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%90%91%E5%AE%A2%E6%88%B7%E4%BC%A0%E9%80%92%E4%BF%A1%E6%81%AF"><span class="toc-text">如何向客户传递信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E6%8A%80%E5%B7%A7"><span class="toc-text">表达技巧</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-17-%E6%96%B9%E6%A1%88%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E4%B8%BB%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB"><span class="toc-text">2-17 方案实施中的主客体关系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%81%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E3%80%81%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%BB%E4%BD%93"><span class="toc-text">谁是问题的、解决问题的主体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%92%A8%E8%AF%A2%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%88%E5%8C%BB%E7%94%9F%EF%BC%89"><span class="toc-text">管理咨询主体：咨询师团队（医生）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%96%BD%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%EF%BC%88%E7%97%85%E6%82%A3%EF%BC%89"><span class="toc-text">实施主体：委托组织（病患）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%91%A8%E6%9C%9F"><span class="toc-text">解决方案周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%A2%E6%88%90%E9%98%B6%E6%AE%B5"><span class="toc-text">形成阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%E5%92%8C%E4%BF%AE%E8%AE%A2%E7%8E%AF%E8%8A%82"><span class="toc-text">评估和修订环节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E6%94%B6%E7%8E%AF%E8%8A%82"><span class="toc-text">验收环节</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-18-%E5%90%88%E4%BD%9C%E4%BA%A7%E7%94%9F%E7%AB%9E%E4%BA%89%E5%8A%9B"><span class="toc-text">2-18 合作产生竞争力</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-text">前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">合作机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%E5%92%8C%E5%92%A8%E8%AF%A2%E7%BB%84%E7%BB%87%E8%A6%81%E5%9C%A8%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E5%89%8D%E6%88%90%E7%AB%8B%E6%9C%80%E9%AB%98%E5%B1%82%E7%9B%B4%E6%8E%A5%E5%8F%82%E4%B8%8E%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%8E%A8%E5%8A%A8%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%EF%BC%8C%E4%B8%8B%E8%AE%BE%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E7%BB%84%E5%92%8C%E6%A0%B8%E5%BF%83%E7%BB%84"><span class="toc-text">组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%9B%B4%E7%BB%95%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%EF%BC%8C%E5%AE%9A%E6%9C%9F%E7%BB%BC%E5%90%88%E4%BC%9A%E5%95%86%E4%B8%8E%E4%B8%93%E9%A1%B9%E4%BC%9A%E5%95%86%E7%9B%B8%E7%BB%93%E5%90%88"><span class="toc-text">工作运行机制：围绕项目计划，定期综合会商与专项会商相结合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E5%88%B6%EF%BC%9A%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6%E5%BA%94%E7%BA%B3%E5%85%A5%E5%90%88%E5%90%8C%E9%99%84%E4%BB%B6"><span class="toc-text">法制：联席委员会的工作机制应纳入合同附件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E5%90%88%E4%BD%9C%E4%B8%89%E4%B8%AA%E5%B1%82%E6%AC%A1%EF%BC%9A%E6%95%88%E7%8E%87%E3%80%81%E6%95%88%E6%9E%9C%E3%80%81%E6%95%88%E7%9B%8A"><span class="toc-text">有效合作三个层次：效率、效果、效益</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%92%A8%E8%AF%A2%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E2%80%9C%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94%E2%80%9D"><span class="toc-text">咨询实施中的“授人以渔”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB%E9%80%94%E5%BE%84"><span class="toc-text">管理专业知识转移途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B6%E4%B8%8A%E9%A9%AC"><span class="toc-text">扶上马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%81%E4%B8%80%E7%A8%8B"><span class="toc-text">送一程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">培训的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E4%B8%89%E6%AE%B5%E8%AE%BA"><span class="toc-text">培训三段论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB"><span class="toc-text">双向知识转移</span></a></li></ol></li></ol>
+</div></main>
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="/imag/我的头像.jpg" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">吕泳宏(Yonghong Lv)</p>
+<p class="author-description">天津大学在读硕士，一枚喜欢钻研的极客小白。</p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>6</span>
+    <span>Posts</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>0</span>
+    <span>Categories</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>3</span>
+    <span>Tags</span>
+  </a>
+</div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-16-%E5%A6%82%E4%BD%95%E6%8E%A8%E4%BB%8B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">2-16 如何推介解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%96%E5%BE%97%E5%AE%A2%E6%88%B7%E7%9A%84%E4%BF%A1%E4%BB%BB%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-text">取得客户的信任（基础）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E4%BB%BB%E7%9A%84%E6%9D%A5%E6%BA%90%EF%BC%9A"><span class="toc-text">信任的来源：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E4%B8%8D%E5%8F%AF%E6%88%96%E7%BC%BA%E7%9A%84%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-text">培训是方案推介不可或缺的组成部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E4%BA%8B%E5%AE%9E%E7%9A%84%E4%B8%A5%E8%B0%A8%E5%88%86%E6%9E%90%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%89%8D%E5%A5%8F"><span class="toc-text">基于事实的严谨分析是方案推介的前奏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E6%9C%80%E5%90%8E%E9%98%B6%E6%AE%B5%EF%BC%9A%E7%B3%BB%E7%BB%9F%E5%8C%96"><span class="toc-text">汇报是方案推介的最后阶段：系统化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E5%BD%A2%E5%BC%8F"><span class="toc-text">汇报形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%90%91%E5%AE%A2%E6%88%B7%E4%BC%A0%E9%80%92%E4%BF%A1%E6%81%AF"><span class="toc-text">如何向客户传递信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E6%8A%80%E5%B7%A7"><span class="toc-text">表达技巧</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-17-%E6%96%B9%E6%A1%88%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E4%B8%BB%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB"><span class="toc-text">2-17 方案实施中的主客体关系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%81%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E3%80%81%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%BB%E4%BD%93"><span class="toc-text">谁是问题的、解决问题的主体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%92%A8%E8%AF%A2%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%88%E5%8C%BB%E7%94%9F%EF%BC%89"><span class="toc-text">管理咨询主体：咨询师团队（医生）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%96%BD%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%EF%BC%88%E7%97%85%E6%82%A3%EF%BC%89"><span class="toc-text">实施主体：委托组织（病患）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%91%A8%E6%9C%9F"><span class="toc-text">解决方案周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%A2%E6%88%90%E9%98%B6%E6%AE%B5"><span class="toc-text">形成阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%E5%92%8C%E4%BF%AE%E8%AE%A2%E7%8E%AF%E8%8A%82"><span class="toc-text">评估和修订环节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E6%94%B6%E7%8E%AF%E8%8A%82"><span class="toc-text">验收环节</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-18-%E5%90%88%E4%BD%9C%E4%BA%A7%E7%94%9F%E7%AB%9E%E4%BA%89%E5%8A%9B"><span class="toc-text">2-18 合作产生竞争力</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-text">前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">合作机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%E5%92%8C%E5%92%A8%E8%AF%A2%E7%BB%84%E7%BB%87%E8%A6%81%E5%9C%A8%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E5%89%8D%E6%88%90%E7%AB%8B%E6%9C%80%E9%AB%98%E5%B1%82%E7%9B%B4%E6%8E%A5%E5%8F%82%E4%B8%8E%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%8E%A8%E5%8A%A8%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%EF%BC%8C%E4%B8%8B%E8%AE%BE%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E7%BB%84%E5%92%8C%E6%A0%B8%E5%BF%83%E7%BB%84"><span class="toc-text">组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%9B%B4%E7%BB%95%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%EF%BC%8C%E5%AE%9A%E6%9C%9F%E7%BB%BC%E5%90%88%E4%BC%9A%E5%95%86%E4%B8%8E%E4%B8%93%E9%A1%B9%E4%BC%9A%E5%95%86%E7%9B%B8%E7%BB%93%E5%90%88"><span class="toc-text">工作运行机制：围绕项目计划，定期综合会商与专项会商相结合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E5%88%B6%EF%BC%9A%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6%E5%BA%94%E7%BA%B3%E5%85%A5%E5%90%88%E5%90%8C%E9%99%84%E4%BB%B6"><span class="toc-text">法制：联席委员会的工作机制应纳入合同附件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E5%90%88%E4%BD%9C%E4%B8%89%E4%B8%AA%E5%B1%82%E6%AC%A1%EF%BC%9A%E6%95%88%E7%8E%87%E3%80%81%E6%95%88%E6%9E%9C%E3%80%81%E6%95%88%E7%9B%8A"><span class="toc-text">有效合作三个层次：效率、效果、效益</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%92%A8%E8%AF%A2%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E2%80%9C%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94%E2%80%9D"><span class="toc-text">咨询实施中的“授人以渔”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB%E9%80%94%E5%BE%84"><span class="toc-text">管理专业知识转移途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B6%E4%B8%8A%E9%A9%AC"><span class="toc-text">扶上马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%81%E4%B8%80%E7%A8%8B"><span class="toc-text">送一程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">培训的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E4%B8%89%E6%AE%B5%E8%AE%BA"><span class="toc-text">培训三段论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB"><span class="toc-text">双向知识转移</span></a></li></ol></li></ol>
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>Categories
+  </div>
+  <div class="categories-list">
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>hot tags
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86/" 
+        title="经济管理">
+        <div class="tags-list-item">经济管理</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%B5%84%E6%96%99%E5%A4%87%E4%BB%BD/" 
+        title="资料备份">
+        <div class="tags-list-item">资料备份</div>
+      </a>
+    
+      <a 
+        href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD%E5%8D%8F%E4%BC%9A/" 
+        title="野生技能协会">
+        <div class="tags-list-item">野生技能协会</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-16-%E5%A6%82%E4%BD%95%E6%8E%A8%E4%BB%8B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">2-16 如何推介解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%96%E5%BE%97%E5%AE%A2%E6%88%B7%E7%9A%84%E4%BF%A1%E4%BB%BB%EF%BC%88%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-text">取得客户的信任（基础）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E4%BB%BB%E7%9A%84%E6%9D%A5%E6%BA%90%EF%BC%9A"><span class="toc-text">信任的来源：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E4%B8%8D%E5%8F%AF%E6%88%96%E7%BC%BA%E7%9A%84%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-text">培训是方案推介不可或缺的组成部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E4%BA%8B%E5%AE%9E%E7%9A%84%E4%B8%A5%E8%B0%A8%E5%88%86%E6%9E%90%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E5%89%8D%E5%A5%8F"><span class="toc-text">基于事实的严谨分析是方案推介的前奏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E6%98%AF%E6%96%B9%E6%A1%88%E6%8E%A8%E4%BB%8B%E7%9A%84%E6%9C%80%E5%90%8E%E9%98%B6%E6%AE%B5%EF%BC%9A%E7%B3%BB%E7%BB%9F%E5%8C%96"><span class="toc-text">汇报是方案推介的最后阶段：系统化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%8A%A5%E5%BD%A2%E5%BC%8F"><span class="toc-text">汇报形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%90%91%E5%AE%A2%E6%88%B7%E4%BC%A0%E9%80%92%E4%BF%A1%E6%81%AF"><span class="toc-text">如何向客户传递信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E8%BE%BE%E6%8A%80%E5%B7%A7"><span class="toc-text">表达技巧</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-17-%E6%96%B9%E6%A1%88%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E4%B8%BB%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB"><span class="toc-text">2-17 方案实施中的主客体关系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%81%E6%98%AF%E9%97%AE%E9%A2%98%E7%9A%84%E3%80%81%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%BB%E4%BD%93"><span class="toc-text">谁是问题的、解决问题的主体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%92%A8%E8%AF%A2%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%88%E5%8C%BB%E7%94%9F%EF%BC%89"><span class="toc-text">管理咨询主体：咨询师团队（医生）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%96%BD%E4%B8%BB%E4%BD%93%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%EF%BC%88%E7%97%85%E6%82%A3%EF%BC%89"><span class="toc-text">实施主体：委托组织（病患）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%91%A8%E6%9C%9F"><span class="toc-text">解决方案周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%A2%E6%88%90%E9%98%B6%E6%AE%B5"><span class="toc-text">形成阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%E5%92%8C%E4%BF%AE%E8%AE%A2%E7%8E%AF%E8%8A%82"><span class="toc-text">评估和修订环节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E6%94%B6%E7%8E%AF%E8%8A%82"><span class="toc-text">验收环节</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-18-%E5%90%88%E4%BD%9C%E4%BA%A7%E7%94%9F%E7%AB%9E%E4%BA%89%E5%8A%9B"><span class="toc-text">2-18 合作产生竞争力</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-text">前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="toc-text">合作机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E7%BB%87%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%A7%94%E6%89%98%E7%BB%84%E7%BB%87%E5%92%8C%E5%92%A8%E8%AF%A2%E7%BB%84%E7%BB%87%E8%A6%81%E5%9C%A8%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E5%89%8D%E6%88%90%E7%AB%8B%E6%9C%80%E9%AB%98%E5%B1%82%E7%9B%B4%E6%8E%A5%E5%8F%82%E4%B8%8E%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%8E%A8%E5%8A%A8%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%EF%BC%8C%E4%B8%8B%E8%AE%BE%E4%B8%93%E9%A1%B9%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E7%BB%84%E5%92%8C%E6%A0%B8%E5%BF%83%E7%BB%84"><span class="toc-text">组织机制：委托组织和咨询组织要在项目启动前成立最高层直接参与的项目推动联席委员会，下设专项项目工作组和核心组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%9B%B4%E7%BB%95%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%EF%BC%8C%E5%AE%9A%E6%9C%9F%E7%BB%BC%E5%90%88%E4%BC%9A%E5%95%86%E4%B8%8E%E4%B8%93%E9%A1%B9%E4%BC%9A%E5%95%86%E7%9B%B8%E7%BB%93%E5%90%88"><span class="toc-text">工作运行机制：围绕项目计划，定期综合会商与专项会商相结合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E5%88%B6%EF%BC%9A%E8%81%94%E5%B8%AD%E5%A7%94%E5%91%98%E4%BC%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6%E5%BA%94%E7%BA%B3%E5%85%A5%E5%90%88%E5%90%8C%E9%99%84%E4%BB%B6"><span class="toc-text">法制：联席委员会的工作机制应纳入合同附件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E5%90%88%E4%BD%9C%E4%B8%89%E4%B8%AA%E5%B1%82%E6%AC%A1%EF%BC%9A%E6%95%88%E7%8E%87%E3%80%81%E6%95%88%E6%9E%9C%E3%80%81%E6%95%88%E7%9B%8A"><span class="toc-text">有效合作三个层次：效率、效果、效益</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%92%A8%E8%AF%A2%E5%AE%9E%E6%96%BD%E4%B8%AD%E7%9A%84%E2%80%9C%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94%E2%80%9D"><span class="toc-text">咨询实施中的“授人以渔”</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB%E9%80%94%E5%BE%84"><span class="toc-text">管理专业知识转移途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B6%E4%B8%8A%E9%A9%AC"><span class="toc-text">扶上马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%81%E4%B8%80%E7%A8%8B"><span class="toc-text">送一程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">培训的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%B9%E8%AE%AD%E4%B8%89%E6%AE%B5%E8%AE%BA"><span class="toc-text">培训三段论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E7%9F%A5%E8%AF%86%E8%BD%AC%E7%A7%BB"><span class="toc-text">双向知识转移</span></a></li></ol></li></ol>
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>Recent Posts
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-03-13</div>
+        <a href="/2022/03/13/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B04/"><div class="recent-posts-item-content">《管理咨询》学习笔记4</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-03-07</div>
+        <a href="/2022/03/07/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03/"><div class="recent-posts-item-content">《管理咨询》学习笔记3</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-03-04</div>
+        <a href="/2022/03/04/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"><div class="recent-posts-item-content">英语学习</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2022-03-02</div>
+        <a href="/2022/03/02/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/"><div class="recent-posts-item-content">《管理咨询》学习笔记2</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020 -
+          
+          2022
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          吕泳宏的个人博客
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer> 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+     
+    
+    
+  </body>
+</html>
