@@ -18,17 +18,17 @@
   <link 
     rel="icon" 
     href="/imag/star.png">
-  <title>我的第一篇博客搭建指南</title>
+  <title>《激荡三十年》读书笔记</title>
   
     
       <meta 
         property="og:title" 
-        content="我的第一篇博客搭建指南">
+        content="《激荡三十年》读书笔记">
     
     
       <meta 
         property="og:url" 
-        content="http://example.com/2022/02/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/index.html">
+        content="http://example.com/2022/03/22/%E3%80%8A%E6%BF%80%E8%8D%A1%E4%B8%89%E5%8D%81%E5%B9%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
     
     
       <meta 
@@ -42,10 +42,10 @@
         content="article">
       <meta 
         property="og:article:published_time" 
-        content="2022-02-10">
+        content="2022-03-22">
       <meta 
         property="og:article:modified_time" 
-        content="2022-03-17">
+        content="2022-04-05">
       <meta 
         property="og:article:author" 
         content="吕泳宏(Yonghong Lv)">
@@ -53,7 +53,7 @@
         
           <meta 
             property="og:article:tag" 
-            content="野生技能协会">
+            content="读书笔记">
         
       
     
@@ -264,30 +264,30 @@
 <article class="card card-content">
   <header>
     <h1 class="post-title">
-      我的第一篇博客搭建指南
+      《激荡三十年》读书笔记
     </h1>
   </header>
   <div class="post-meta post-show-meta">
-    <time datetime="2022-02-10T15:48:20.000Z">
+    <time datetime="2022-03-22T01:25:02.000Z">
       <i 
         class="iconfont icon-calendar" 
         style="margin-right: 2px;">
       </i>
-      <span>2022-02-10</span>
+      <span>2022-03-22</span>
     </time>
     
       <span class="dot"></span>
       
         <a 
-          href="/categories/IT%E6%8A%80%E8%83%BD%E7%BB%83%E4%B9%A0/" 
+          href="/categories/2022%E5%B9%B44%E6%9C%88/" 
           class="post-meta-link">
-          IT技能练习
+          2022年4月
         </a>
       
     
     
       <span class="dot"></span>
-      <span>961 字</span>
+      <span>759 字</span>
     
   </div>
   
@@ -302,9 +302,9 @@
         
           
           <a 
-            href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD%E5%8D%8F%E4%BC%9A/" 
+            href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" 
             class="post-meta-link">
-            野生技能协会
+            读书笔记
           </a>
         
       </div>
@@ -314,71 +314,28 @@
   <div 
     id="section" 
     class="post-content">
-    <h1 id="我的第一篇个人博客搭建指南-Windows系统"><a href="#我的第一篇个人博客搭建指南-Windows系统" class="headerlink" title="我的第一篇个人博客搭建指南-Windows系统"></a>我的第一篇个人博客搭建指南-Windows系统</h1><p>这是我的第一篇博客文章，在这里记录下搭建个人博客的整体流程，供自己以及有个人博客创作想法的小伙伴备份或参考。</p>
-<p>长篇预警！</p>
-<h2 id="Step-1-从网络教程开始"><a href="#Step-1-从网络教程开始" class="headerlink" title="Step 1 从网络教程开始"></a>Step 1 从网络教程开始</h2><p>搭建个人博客的途径通常有三种，本人按照递增的难易程度，罗列如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">方案</th>
-<th align="left">特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">已有框架 + 程序托管网站</td>
-<td align="left">简单，免费，不稳定</td>
-</tr>
-<tr>
-<td align="left">已有框架 + 个人云服务器</td>
-<td align="left">简单，需要花钱，稳定高速</td>
-</tr>
-<tr>
-<td align="left">自主搭建框架 + 个人云服务器</td>
-<td align="left">相对灵活，对编程基础有较高要求，需要花钱，稳定高速</td>
-</tr>
-</tbody></table>
-<p>本文采取的是方案一，即在已有框架下借助程序托管网站搭建个人博客，同时，本指南主要适用于Win系统的用户。</p>
-<p>本人主要参考了网络上codesheep的教程进行博客搭建，并在他的教程基础上进行了修订，推荐大家按照本文流程进行博客搭建。</p>
-<p>以上解决方案中，鉴于个人需求，我选择了第一种方案，为此选择了相对成熟的hexo框架，托管网站我使用的是GitHub，但鉴于该网站链接不稳定的问题，个人建议换用国内的Gitee等网站进行程序托管。</p>
-<p>在进入正式博客建立之前，先介绍在本文之后流程中必备的网站或软件：</p>
-<p><strong>一款浏览器</strong></p>
-<p>可以采用一些插件或软件进行加速。</p>
-<p><strong>一个程序托管网站</strong></p>
-<p>本文使用Github，也可以采用Gitee等。</p>
-<p><strong>一款 IDE</strong></p>
-<p>用于查看各种类型的代码，特别说明，本文中提及的文件格式都可以用记事本打开，若对代码观感要求很低，可以直接用，如果觉得记事本看代码不够方便，可以使用VSCode等IDE。</p>
-<h2 id="Step-2-下载Git、Node-js"><a href="#Step-2-下载Git、Node-js" class="headerlink" title="Step 2 下载Git、Node.js"></a>Step 2 下载Git、Node.js</h2><ul>
-<li><input disabled="" type="checkbox"> 下载安装程序</li>
-<li><input disabled="" type="checkbox"> 安装注意事项</li>
-<li><input disabled="" type="checkbox"> 检查安装是否成功</li>
+    <p>《激荡三十年》知识图谱</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li>尽管任何一段历史都有它不可替代的独特性，可是，1978-2008年的中国，却是不可能重复的。在一个拥有13亿人口的大国里，僵化的计划经济体制日渐瓦解，一群小人物把中国变成了一个巨大的试验场，它在众目睽睽之下，以不可逆转的姿态向商业社会转轨。<br>——关于<strong>1978-2008年的中国商业社会</strong></li>
 </ul>
-<p>官方下载地址如下：</p>
-<p>对于下载速度奇慢无比的小伙伴，推荐更换下载网站重新下载：</p>
-<p>[其他镜像网站]: <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn</a>    “”清华大学开源软件镜像站””</p>
-<p>若电脑自带软件商店，也可以直接在这些平台下载，比如：</p>
-<h2 id="Step-3-在GitHub等托管网站搭建链接"><a href="#Step-3-在GitHub等托管网站搭建链接" class="headerlink" title="Step 3 在GitHub等托管网站搭建链接"></a>Step 3 在GitHub等托管网站搭建链接</h2><ul>
-<li><input disabled="" type="checkbox"> 注册GitHub账号，若已有直接跳到下一步即可</li>
-<li><input disabled="" type="checkbox"> 新建repository，并以你的GitHub用户名命名</li>
-<li><input disabled="" type="checkbox"> 开启GitHub Pages服务</li>
+<hr>
+<ul>
+<li>20多年来，中国公司一直是在非规范化的市场氛围中成长起来的，数以百万计的民营企业在体制外壮大，在资源、市场、人才、政策、资金甚至地理位置都毫无优势的情况下实现了高速的成长，这种成长特征，决定了中国企业的草莽性和灰色性。<br>——关于<strong>民营企业</strong></li>
+<li>中国的商业变革是一场由国家亲自下场参与的公司博弈，在规律上存在着它的必然性与先天的不公平性。<br>——关于<strong>国营企业</strong></li>
+<li>它们是一股根本不可能被绕过的势力，在某种程度上，自它们进入中国市场的那一天起，它们便已经是中国企业。<br>——关于<strong>外资企业</strong></li>
 </ul>
-<h2 id="Step-4-修改hexo配置"><a href="#Step-4-修改hexo配置" class="headerlink" title="Step 4 修改hexo配置"></a>Step 4 修改hexo配置</h2><h2 id="Step-5-博客的更新"><a href="#Step-5-博客的更新" class="headerlink" title="Step 5 博客的更新"></a>Step 5 博客的更新</h2><h3 id="文章写作"><a href="#文章写作" class="headerlink" title="文章写作"></a><u>文章写作</u></h3><p>hexo采用了轻量级标记语言Markdown解析文章。</p>
-<p>打开根目录中<code>source/_posts</code>文件夹，可以看到有至少一个md后缀文件，每一个文件对应一篇文章，打开hello-world文件，可以看到内容由title、tags等构成，文章的正文只需用Markdown格式写在文件的最后即可。</p>
-<p>对于Markdown格式的写作，简单易上手，且有许多软件、网站都可以实现，如Typora、VSCode、有道云笔记等，我使用的是Typora软件，结合格式教程使用，即刻上手。</p>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a><u>更新博客</u></h3><p>打开GitBash，用cd命令定位到博客所在根目录</p>
-<p><code>cd ***</code></p>
-<p>依次输入</p>
-<p><code>hexo clean</code></p>
-<p><code>hexo generate</code></p>
-<p><code>hexo deploy</code></p>
-<p>即可实现博客自动更新。</p>
-<h2 id="Step-6-博客的美化"><a href="#Step-6-博客的美化" class="headerlink" title="Step 6 博客的美化"></a>Step 6 博客的美化</h2><ul>
-<li><input disabled="" type="checkbox"> 主题的选择</li>
-<li><input disabled="" type="checkbox"> 主题的修改</li>
-<li><input disabled="" type="checkbox"> 增加网页小细节</li>
+<hr>
+<ul>
+<li>任何被视为奇迹的事务，往往都很难延续，因为它来自一个超越了常规的历程，身处其中的人们，因此而获得巨大利益的人们，每每不可能摆脱那些让他们终生难忘的际遇，他们相信那就是命运，他们总希望每次都能红运高照，每次都能侥幸胜出，最后，所有的光荣往往都枯萎在自己的光环中。<br>——关于<strong>迷信奇迹</strong></li>
 </ul>
-<h3 id="主题的选择"><a href="#主题的选择" class="headerlink" title="主题的选择"></a><u>主题的选择</u></h3><h4 id="方法一：在GitHub或Gitee等网站查找博客主题"><a href="#方法一：在GitHub或Gitee等网站查找博客主题" class="headerlink" title="方法一：在GitHub或Gitee等网站查找博客主题"></a>方法一：在GitHub或Gitee等网站查找博客主题</h4><h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><p>更换主题</p>
-<p>首先在<code>package.json</code>中删除最后一个默认的主题 <code>&quot;hexo-theme-landscape&quot;: &quot;^0.0.3&quot;</code>，注意前一行的逗号也要删除。</p>
-<h3 id="主题的修改"><a href="#主题的修改" class="headerlink" title="主题的修改"></a><u>主题的修改</u></h3><h3 id="增加网页小细节"><a href="#增加网页小细节" class="headerlink" title="增加网页小细节"></a><u>增加网页小细节</u></h3>
+<h1 id="第一部-1978-1983-没有规则的骚动"><a href="#第一部-1978-1983-没有规则的骚动" class="headerlink" title="第一部 1978-1983 没有规则的骚动"></a>第一部 1978-1983 没有规则的骚动</h1><p>说社会的进步是由于历史某个时期的社会思想条件自然而然发生的，这简直是无稽之谈。它实际只是在这个社会已经下定决心进行实验之后才一蹴而就的，这就是说，这个社会必须要自信，或无论怎样要允许自己受到震撼，而这种震撼始终是由某个人来赋予的。<br>——柏格森关于“主角”</p>
+<h2 id="1978年"><a href="#1978年" class="headerlink" title="1978年"></a>1978年</h2><h3 id="邓小平"><a href="#邓小平" class="headerlink" title="邓小平"></a>邓小平</h3><h3 id="高考恢复"><a href="#高考恢复" class="headerlink" title="高考恢复"></a>高考恢复</h3><h3 id="国际建交和外资企业引进"><a href="#国际建交和外资企业引进" class="headerlink" title="国际建交和外资企业引进"></a>国际建交和外资企业引进</h3><ul>
+<li>可口可乐</li>
+<li>日本松下</li>
+<li>新加坡</li>
+<li>向加拿大、英国、法国、德国和日本分别派出500名留学生，而美国希望接纳5000个。<h3 id="农村人民公社制度被家庭联产承包责任制（大包干）替代"><a href="#农村人民公社制度被家庭联产承包责任制（大包干）替代" class="headerlink" title="农村人民公社制度被家庭联产承包责任制（大包干）替代"></a>农村人民公社制度被家庭联产承包责任制（大包干）替代</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>这个民营公司的成长从一开始就有两个源头，一是华西式的乡村基层政权及其集体企业组织，二是鲁冠球工厂式的自主创业型企业。<br>——关于民营公司的起点</li>
+</ul>
+<h2 id="1980年——告别浪漫的时代"><a href="#1980年——告别浪漫的时代" class="headerlink" title="1980年——告别浪漫的时代"></a>1980年——告别浪漫的时代</h2><h3 id="中央为前国家主席刘少奇平反"><a href="#中央为前国家主席刘少奇平反" class="headerlink" title="中央为前国家主席刘少奇平反"></a>中央为前国家主席刘少奇平反</h3><h3 id="经济特区"><a href="#经济特区" class="headerlink" title="经济特区"></a>经济特区</h3>
   </div>
   <div>
     
@@ -397,8 +354,8 @@
           <span style="font-weight: bold;">文章链接：</span><a 
             target="_blank" 
             rel="nofollow noopener noreferrer" 
-            href="http://example.com/2022/02/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/">
-            http://example.com/2022/02/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/
+            href="http://example.com/2022/03/22/%E3%80%8A%E6%BF%80%E8%8D%A1%E4%B8%89%E5%8D%81%E5%B9%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+            http://example.com/2022/03/22/%E3%80%8A%E6%BF%80%E8%8D%A1%E4%B8%89%E5%8D%81%E5%B9%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/
           </a>
         </p>
         <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
@@ -410,18 +367,32 @@
   
     <div class="nav-item-prev">
       <a 
-        href="/2022/03/01/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" 
+        href="/2022/05/10/%E6%88%91%E7%9A%84%E5%88%9B%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" 
         class="nav-link">
         <i class="iconfont icon-left nav-prev-icon"></i>
         <div>
           <div class="nav-label">上一篇</div>
           
-            <div class="nav-title">《管理咨询》学习笔记1 </div>
+            <div class="nav-title">我的创业学习记录 </div>
           
         </div>
       </a>
     </div>
   
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2022/03/15/%E6%88%91%E7%9A%84CPA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">下一篇</div>
+          
+            <div class="nav-title">我的CPA学习记录 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
   
 </div>
 
@@ -434,7 +405,7 @@
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97-Windows%E7%B3%BB%E7%BB%9F"><span class="toc-text">我的第一篇个人博客搭建指南-Windows系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-1-%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%E5%BC%80%E5%A7%8B"><span class="toc-text">Step 1 从网络教程开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-2-%E4%B8%8B%E8%BD%BDGit%E3%80%81Node-js"><span class="toc-text">Step 2 下载Git、Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-3-%E5%9C%A8GitHub%E7%AD%89%E6%89%98%E7%AE%A1%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E9%93%BE%E6%8E%A5"><span class="toc-text">Step 3 在GitHub等托管网站搭建链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4-%E4%BF%AE%E6%94%B9hexo%E9%85%8D%E7%BD%AE"><span class="toc-text">Step 4 修改hexo配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-5-%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0"><span class="toc-text">Step 5 博客的更新</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C"><span class="toc-text">文章写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2"><span class="toc-text">更新博客</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-6-%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96"><span class="toc-text">Step 6 博客的美化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-text">主题的选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9C%A8GitHub%E6%88%96Gitee%E7%AD%89%E7%BD%91%E7%AB%99%E6%9F%A5%E6%89%BE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98"><span class="toc-text">方法一：在GitHub或Gitee等网站查找博客主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-text">方法二</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-text">主题的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E7%BD%91%E9%A1%B5%E5%B0%8F%E7%BB%86%E8%8A%82"><span class="toc-text">增加网页小细节</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8-1978-1983-%E6%B2%A1%E6%9C%89%E8%A7%84%E5%88%99%E7%9A%84%E9%AA%9A%E5%8A%A8"><span class="toc-text">第一部 1978-1983 没有规则的骚动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1978%E5%B9%B4"><span class="toc-text">1978年</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%93%E5%B0%8F%E5%B9%B3"><span class="toc-text">邓小平</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E8%80%83%E6%81%A2%E5%A4%8D"><span class="toc-text">高考恢复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BD%E9%99%85%E5%BB%BA%E4%BA%A4%E5%92%8C%E5%A4%96%E8%B5%84%E4%BC%81%E4%B8%9A%E5%BC%95%E8%BF%9B"><span class="toc-text">国际建交和外资企业引进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%9C%E6%9D%91%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E5%88%B6%E5%BA%A6%E8%A2%AB%E5%AE%B6%E5%BA%AD%E8%81%94%E4%BA%A7%E6%89%BF%E5%8C%85%E8%B4%A3%E4%BB%BB%E5%88%B6%EF%BC%88%E5%A4%A7%E5%8C%85%E5%B9%B2%EF%BC%89%E6%9B%BF%E4%BB%A3"><span class="toc-text">农村人民公社制度被家庭联产承包责任制（大包干）替代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1980%E5%B9%B4%E2%80%94%E2%80%94%E5%91%8A%E5%88%AB%E6%B5%AA%E6%BC%AB%E7%9A%84%E6%97%B6%E4%BB%A3"><span class="toc-text">1980年——告别浪漫的时代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%A4%AE%E4%B8%BA%E5%89%8D%E5%9B%BD%E5%AE%B6%E4%B8%BB%E5%B8%AD%E5%88%98%E5%B0%91%E5%A5%87%E5%B9%B3%E5%8F%8D"><span class="toc-text">中央为前国家主席刘少奇平反</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%8F%E6%B5%8E%E7%89%B9%E5%8C%BA"><span class="toc-text">经济特区</span></a></li></ol></li></ol></li></ol>
 </div></main>
             <aside class="left-column">
               
@@ -482,7 +453,7 @@
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97-Windows%E7%B3%BB%E7%BB%9F"><span class="toc-text">我的第一篇个人博客搭建指南-Windows系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-1-%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%E5%BC%80%E5%A7%8B"><span class="toc-text">Step 1 从网络教程开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-2-%E4%B8%8B%E8%BD%BDGit%E3%80%81Node-js"><span class="toc-text">Step 2 下载Git、Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-3-%E5%9C%A8GitHub%E7%AD%89%E6%89%98%E7%AE%A1%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E9%93%BE%E6%8E%A5"><span class="toc-text">Step 3 在GitHub等托管网站搭建链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4-%E4%BF%AE%E6%94%B9hexo%E9%85%8D%E7%BD%AE"><span class="toc-text">Step 4 修改hexo配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-5-%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0"><span class="toc-text">Step 5 博客的更新</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C"><span class="toc-text">文章写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2"><span class="toc-text">更新博客</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-6-%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96"><span class="toc-text">Step 6 博客的美化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-text">主题的选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9C%A8GitHub%E6%88%96Gitee%E7%AD%89%E7%BD%91%E7%AB%99%E6%9F%A5%E6%89%BE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98"><span class="toc-text">方法一：在GitHub或Gitee等网站查找博客主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-text">方法二</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-text">主题的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E7%BD%91%E9%A1%B5%E5%B0%8F%E7%BB%86%E8%8A%82"><span class="toc-text">增加网页小细节</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8-1978-1983-%E6%B2%A1%E6%9C%89%E8%A7%84%E5%88%99%E7%9A%84%E9%AA%9A%E5%8A%A8"><span class="toc-text">第一部 1978-1983 没有规则的骚动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1978%E5%B9%B4"><span class="toc-text">1978年</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%93%E5%B0%8F%E5%B9%B3"><span class="toc-text">邓小平</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E8%80%83%E6%81%A2%E5%A4%8D"><span class="toc-text">高考恢复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BD%E9%99%85%E5%BB%BA%E4%BA%A4%E5%92%8C%E5%A4%96%E8%B5%84%E4%BC%81%E4%B8%9A%E5%BC%95%E8%BF%9B"><span class="toc-text">国际建交和外资企业引进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%9C%E6%9D%91%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E5%88%B6%E5%BA%A6%E8%A2%AB%E5%AE%B6%E5%BA%AD%E8%81%94%E4%BA%A7%E6%89%BF%E5%8C%85%E8%B4%A3%E4%BB%BB%E5%88%B6%EF%BC%88%E5%A4%A7%E5%8C%85%E5%B9%B2%EF%BC%89%E6%9B%BF%E4%BB%A3"><span class="toc-text">农村人民公社制度被家庭联产承包责任制（大包干）替代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1980%E5%B9%B4%E2%80%94%E2%80%94%E5%91%8A%E5%88%AB%E6%B5%AA%E6%BC%AB%E7%9A%84%E6%97%B6%E4%BB%A3"><span class="toc-text">1980年——告别浪漫的时代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%A4%AE%E4%B8%BA%E5%89%8D%E5%9B%BD%E5%AE%B6%E4%B8%BB%E5%B8%AD%E5%88%98%E5%B0%91%E5%A5%87%E5%B9%B3%E5%8F%8D"><span class="toc-text">中央为前国家主席刘少奇平反</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%8F%E6%B5%8E%E7%89%B9%E5%8C%BA"><span class="toc-text">经济特区</span></a></li></ol></li></ol></li></ol>
       </div>
     </article>
   
@@ -595,7 +566,7 @@
     style="padding-right: 2px;">
   </i>目录
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97-Windows%E7%B3%BB%E7%BB%9F"><span class="toc-text">我的第一篇个人博客搭建指南-Windows系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-1-%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%E5%BC%80%E5%A7%8B"><span class="toc-text">Step 1 从网络教程开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-2-%E4%B8%8B%E8%BD%BDGit%E3%80%81Node-js"><span class="toc-text">Step 2 下载Git、Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-3-%E5%9C%A8GitHub%E7%AD%89%E6%89%98%E7%AE%A1%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E9%93%BE%E6%8E%A5"><span class="toc-text">Step 3 在GitHub等托管网站搭建链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4-%E4%BF%AE%E6%94%B9hexo%E9%85%8D%E7%BD%AE"><span class="toc-text">Step 4 修改hexo配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-5-%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0"><span class="toc-text">Step 5 博客的更新</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C"><span class="toc-text">文章写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2"><span class="toc-text">更新博客</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-6-%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96"><span class="toc-text">Step 6 博客的美化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-text">主题的选择</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9C%A8GitHub%E6%88%96Gitee%E7%AD%89%E7%BD%91%E7%AB%99%E6%9F%A5%E6%89%BE%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98"><span class="toc-text">方法一：在GitHub或Gitee等网站查找博客主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-text">方法二</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BF%AE%E6%94%B9"><span class="toc-text">主题的修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E7%BD%91%E9%A1%B5%E5%B0%8F%E7%BB%86%E8%8A%82"><span class="toc-text">增加网页小细节</span></a></li></ol></li></ol></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8-1978-1983-%E6%B2%A1%E6%9C%89%E8%A7%84%E5%88%99%E7%9A%84%E9%AA%9A%E5%8A%A8"><span class="toc-text">第一部 1978-1983 没有规则的骚动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1978%E5%B9%B4"><span class="toc-text">1978年</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%93%E5%B0%8F%E5%B9%B3"><span class="toc-text">邓小平</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E8%80%83%E6%81%A2%E5%A4%8D"><span class="toc-text">高考恢复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BD%E9%99%85%E5%BB%BA%E4%BA%A4%E5%92%8C%E5%A4%96%E8%B5%84%E4%BC%81%E4%B8%9A%E5%BC%95%E8%BF%9B"><span class="toc-text">国际建交和外资企业引进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%9C%E6%9D%91%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E5%88%B6%E5%BA%A6%E8%A2%AB%E5%AE%B6%E5%BA%AD%E8%81%94%E4%BA%A7%E6%89%BF%E5%8C%85%E8%B4%A3%E4%BB%BB%E5%88%B6%EF%BC%88%E5%A4%A7%E5%8C%85%E5%B9%B2%EF%BC%89%E6%9B%BF%E4%BB%A3"><span class="toc-text">农村人民公社制度被家庭联产承包责任制（大包干）替代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1980%E5%B9%B4%E2%80%94%E2%80%94%E5%91%8A%E5%88%AB%E6%B5%AA%E6%BC%AB%E7%9A%84%E6%97%B6%E4%BB%A3"><span class="toc-text">1980年——告别浪漫的时代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E5%A4%AE%E4%B8%BA%E5%89%8D%E5%9B%BD%E5%AE%B6%E4%B8%BB%E5%B8%AD%E5%88%98%E5%B0%91%E5%A5%87%E5%B9%B3%E5%8F%8D"><span class="toc-text">中央为前国家主席刘少奇平反</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%8F%E6%B5%8E%E7%89%B9%E5%8C%BA"><span class="toc-text">经济特区</span></a></li></ol></li></ol></li></ol>
     </article>
   
   
