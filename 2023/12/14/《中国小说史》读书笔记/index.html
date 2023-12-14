@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="吕泳宏的个人博客">
+  <link 
+    rel="icon" 
+    href="/imag/star.png">
+  <title>《中国现代小说史》读书笔记</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="《中国现代小说史》读书笔记">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2023/12/14/%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%B0%8F%E8%AF%B4%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="/imag/我的头像.jpg">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2023-12-14">
+      <meta 
+        property="og:article:modified_time" 
+        content="2023-12-15">
+      <meta 
+        property="og:article:author" 
+        content="吕泳宏(Yonghong Lv)">
+      
+        
+      
+    
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/imag/star.png" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">吕泳宏的个人博客</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          首页
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          归档
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          标签
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          分类
+        
+      </a>
+    
+      <a 
+        href="/about" 
+        class="navbar-menu-item">
+        
+          关于
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          友链
+        
+      </a>
+    
+    <a 
+      class="navbar-menu-item darknavbar" 
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </a>
+    <a 
+      class="navbar-menu-item searchnavbar" 
+      id="search">
+      <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i>
+    </a>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      《中国现代小说史》读书笔记
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2023-12-14T12:42:29.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2023-12-14</span>
+    </time>
+    
+    
+      <span class="dot"></span>
+      <span>4.5k 字</span>
+    
+  </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <p>#《中国现代小说史》读书笔记</p>
+<h2 id="第二章-鲁迅（周树人）"><a href="#第二章-鲁迅（周树人）" class="headerlink" title="第二章 鲁迅（周树人）"></a>第二章 鲁迅（周树人）</h2><p>过誉，局限于故乡<br>##第三章 文学研究会</p>
+<h3 id="叶绍钧"><a href="#叶绍钧" class="headerlink" title="叶绍钧"></a>叶绍钧</h3><p>只有当他在探讨那些跟他极不相像的人的命运时，他才是个有把握的小说家，像契诃夫一样的融合了同情与讽刺。<br>《孤独》、《秋》、《多收了三斗五》、《乡亲》。</p>
+<hr>
+<h3 id="冰心"><a href="#冰心" class="headerlink" title="冰心"></a>冰心</h3><blockquote>
+<p>卽使文學革命沒有發生，她仍然會成爲一個頗爲重要的詩人和散文作家。但在舊的傳統下，她可能會更有成就，更爲多產。她對西方文化的研究只徒然的鼓勵了她說敎的傾向，破壞了她的感性；她對泰戈爾和吉伯倫的喜愛，也只令她對大自然產生了一種神秘主義的態度，而這種神秘主義其實可說是冒牌的。要是她從小只讀中國詩詞的話，這種態度便能夠被抑制住。當然，冰心的優點並不在於感傷的說敎，也不在於對自然的泛神崇拜態度，而在於她對狹小範圍內的情感有具體的認識。</p>
+</blockquote>
+<blockquote>
+<p>在留美期間她寫了好幾篇小說去關揚她的愛的哲學，最著名的如「超人」與「悟」，發表後卽獲好評。但是這些小說充滿了對月亮、星星和母愛如醉如痴的禮讃，是不折不扣濫用感情之作。其實，這個美化了的世界僅是作者童年幸福生活的投影而已。只有當冰心忍住不去談理說敎，專心去描述孩子們單純的喜樂與悲傷時，她才是一個相當具有感性的作家。她最好的小說一一尤其是她在大學唸書時寫的——都具有這一份純眞的感性。</p>
+</blockquote>
+<blockquote>
+<p>冰心的作品不多，但她是値得在第一期的作家中佔一席重要地位的。雖然她的詩和散文因缺乏現實的架構而傾向於傷感，她的一些短篇小說H有獨特的風格，不受她所處那時代的迷信與狂熱所感染。</p>
+</blockquote>
+<hr>
+<h3 id="凌书华"><a href="#凌书华" class="headerlink" title="凌书华"></a>凌书华</h3><blockquote>
+<p>凌叔華寫的也是婦女和兒童的故事。和冰心不一樣的是，她一開始就顯示出一種較成熟的感性和敏銳的心理觀察，潛力也比冰心大，可惜的是她在三十年代的作品很少，無法證實這一份潛力。</p>
+</blockquote>
+<blockquote>
+<p>凌叔華雖得到一些欣賞力較高的讀者所偏愛，她卻沒能得到廣大讀者的賞識。到了三〇年代，她爲數極少的作品便被當時更重要的作家們的大量作品掩蓋住了。但是做爲一個敏銳的觀察者，觀察在一個過渡時期中中國婦女的挫折與悲慘遭遇，她卻足不亞於任何作家的。整個說起來，她的成就高於冰心。</p>
+</blockquote>
+<hr>
+<h3 id="许地山"><a href="#许地山" class="headerlink" title="许地山"></a>许地山</h3><blockquote>
+<p>許地山所關心的則是慈悲或愛這個基本的宗敎經驗，而幾乎在他所有的小說裏都試着要讓世人知道，這個經驗在我們的生活中是無所不在的。雖然他的成就不大，對其他作家的影響更是微乎其微，但他給他的時代重建精神價値上所作的努力，眞不啻是一種苦行僧的精神。</p>
+</blockquote>
+<blockquote>
+<p>許地山生性是個傳奇故事作家，他大部份的早期作品都很難說得上符合短篇小說的格式，倒是跟通俗的佛敎故事和中古的基督敎傳奇很相近。</p>
+</blockquote>
+<blockquote>
+<p>《玉官》：這是在唯物主義泛濫的時代中不可多得的一個重申精神力量的寓言。在這篇故事裏作者終於能夠完全信賴他所掌握的傳奇材料：他完全丟開現代短篇小說的常規，毫不猶豫的加插了許多在寫實小說中不可能發生的巧合與誤認的情節。爲了給這篇故事享有傳奇的自由，他甚至於不用對白。</p>
+</blockquote>
+<blockquote>
+<p>大部份現代中國作家把他們的同愦只保留給貧苦者和被應迫者；他們完全不知道，任何一個人，不管他的階級與地位如何，都値得我們去同情了解。在這方面，「玉官」算得上是個很成功的例外。</p>
+</blockquote>
+<hr>
+<p>##第四章 创造社</p>
+<h3 id="郭沫若"><a href="#郭沫若" class="headerlink" title="郭沫若"></a>郭沫若</h3><blockquote>
+<p>他的生涯無非是一代文人的活悲劇；以浪漫主義式的反抗始，以屈服於自己參與創立的暴政終。</p>
+</blockquote>
+<blockquote>
+<p>他毫不猶豫就利用西方和中國的神話和現代科學的詞粱，來摹倣雪萊和惠特曼。同樣熱烈地詠唱着宇宙的統一，現代城市生活的淫亂，社會近在眉睫的崩潰，未來人類光明的前景。把這種浪漫主義手法和態度拿來混用，自然可以把當時沒有讀過西洋詩的讀者弄得目迷五色。這種詩看似雄渾，其實骨子裏並沒有眞正內在的感情：節奏的刻板，驚嘆句的濫用，都顯示缺乏詩才。</p>
+</blockquote>
+<hr>
+<h3 id="郁达夫"><a href="#郁达夫" class="headerlink" title="郁达夫"></a>郁达夫</h3><blockquote>
+<p>從他的作品看來，他自己的想像完全來自眞實生活，被其自我狹小世界裏的感覺、情慾所支配。</p>
+</blockquote>
+<hr>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><blockquote>
+<p>從中國文學史的觀點看來，小品文之所以興起，主要是因爲這稀形式最能表現傳統的感性。镒管小說非常流行，但是自文學革命以來，寫小品文的仍不乏人。……凡是傳統的感性在嚴肅的文學中受到壓抑時，小品文對許多作家來說，便成了一種個人的解脫。<br>###周作人<br>作者很有自知之明，知道自己的局限性，因此除了對野蠻行爲和武斷固執的人與事無法容忍外，對世間的愚昧，卻很寬容。那時，有許多人想模仿周作人的文體，但是無論在哲學的認識上和文章的典雅上，誰都及不上他。<br>作爲一個文學批評家，周作人雖然遵照傳統，強調載道派和言志派的對立，但他個人的趣味與感性毫無疑問是屬於後者的。</p>
+</blockquote>
+<hr>
+<h3 id="林语堂"><a href="#林语堂" class="headerlink" title="林语堂"></a>林语堂</h3><blockquote>
+<p>在對抗左派批評以拱衞自己地位的時候，林語堂當然得依靠西方的文化遺產，但是他沒有嚴肅的文學趣味和知識標準，只是鼓吹他個人所熱衷的無關宏旨的一類事，如幽默、牛津大學的學術自由、煙斗、蕭伯納、以及美國流行雜誌裏坦白實事求事的作風等等。</p>
+</blockquote>
+<hr>
+<p>###朱光潜</p>
+<blockquote>
+<p>實際上朱光潛只是克羅齊派第二流的美學家，雖然他對當代文學的評論相當敏銳。</p>
+</blockquote>
+<hr>
+<h2 id="茅盾（沈雁冰）"><a href="#茅盾（沈雁冰）" class="headerlink" title="茅盾（沈雁冰）"></a>茅盾（沈雁冰）</h2><blockquote>
+<p>綜觀這三部曲（其中以「追求」尤甚），茅盾所表現的虛無主義，在精神上和海明威、赫胥黎及伊夫林·瓦（Evelyn Waugh)等名家的早期作品，實在是一脈相承。所不同的，上述那幾位英美作家所注意的是第一次大戰後和同時脫離了維多利亞時代精神價値後所產生的道德瓦解。茅盾的三部曲更富自然主義的色彩，但他對國共合作失敗後和同時傳統道德式微後的靑年人的行止，作了同樣深入的探討。雖然「蝕」的文字稍嫌穠艷，趣味有時流於低級，然而在中國現代的小說中，能眞正反映出當代歷史，洞察社會實況的，「蝕」可算是第一部。尤其難能可貴的是它超越了一般說敎主義的陳腔濫調。在這本作品裏，我們處處看到作者認識到人力無法勝天這回事。</p>
+</blockquote>
+<blockquote>
+<p>论《子夜》、《蚀》和《虹》： 書中的另一特色，是對當時的政治經濟形勢詳作報導，軍政界聞人也提到了不少。可是這種種，每每反而使得讀者不耐和厭煩；如果我們勉強把它看作一本微帶悲劇意味的小說，那麼，最少在技巧方面來講，它並未超越「蝕」和「虹」的成就。我們在本書不難發覺到茅盾的同情心範圍縮小了，代之而起的是自然主義的漫畫手法和誇張敍述。在上述兩本小說中，譏諷誇張乃至色情的手法，整個來講是與蔓延在小說中那種虛無主義色彩配合的。可是在「子夜」裏，卽使茅盾平日描寫得最見功夫的女主角-一不管是多愁善感性的也好，玩世不恭式的也好^一一都失了水準，淪爲漫畫家筆下的人物。茅盾的小說家感性，已經惡俗化了。</p>
+</blockquote>
+<hr>
+<h2 id="第七章-老舍"><a href="#第七章-老舍" class="headerlink" title="第七章 老舍"></a>第七章 老舍</h2><blockquote>
+<p>茅盾的文章，用字華麗舖陳；老舍則往往能寫出純粹北平方言，如果用歷來習用的南北文學傳統來衡量，我們可以說，老舍代表北方和個人主義，個性直截了當，富幽默感；而茅盾則有陰柔的南方氣，浪漫、哀傷、強調感官經驗。茅盾善於描寫女人；老舍的主角則幾乎全是男人，他總是儘量地避免浪漫的題材。茅盾紀錄了近代中國婦女對紛攘的國事的消極反應，老舍則對於個人命運比社會力量更要關心，他的英雄人物都很有幹勁。茅盾很早就轉向共產主義，把它當作解決中國各種問題的不二法門；可是直到寫「駱駝祥子」（一九三七）爲止，老舍一直忠實地相信一個比較單純的愛國信條：所有中國人都應該盡力做好份內的事，來剷除中國的因循腐敗。</p>
+</blockquote>
+<blockquote>
+<p>「趙子曰」有狄更斯的風味，而「二馬」卻比較像幾部維多利亞晚期和愛德華七世時代描寫父子間衝突的小說。在討論中英關係上，這木小說很明顯地也可以和「印度之行」（A Passage to India)相比。但是老舍深深體會到海外華僑所受的屈辱，他不能像福斯特（E.M.Forster)那樣在譏刺中透着十分超脫——因爲悲憤的激情往往掩蓋了諷刺的筆觸。</p>
+</blockquote>
+<blockquote>
+<p>「牛天賜傳」是本有趣的小說，含着對人生的一種清醒的、譏諷的觀點。但是調子太鬆懈，幽默感太平淡，因此就不免顯出作者對他的主題沒有着力處理。相反的，「駱駝祥子」是一本深含個人情感的小說，在這裏老舍想具體寫出他對個人單獨救國的必然徒勞所感覺到的新信念。</p>
+</blockquote>
+<blockquote>
+<p>沒有疑問地，老舍是把這個社會批判當作小說裏不可少的一部份。幸而這一點不常破壞主角生活的悲劇邏輯，而主要故事之所以緊張動人，正是因爲它絲毫不變地把戲劇焦點(dramatic focus)放在奮鬬的事實上。在描寫主角一再拚力設法活下去的時候，老舍表現了驚人的道德眼光和心理深度。特別出色的是祥子和虎妞之間婚前婚後的緊張關係的描寫；像茅盾在「虹」裏所寫梅和柳遇春的婚姻生活一樣，在這裏讀者像是爬上了現代中國文學的一個高峯，可以俯視赤裸裸的人生經驗的狂暴可怖，一點不温情，說敎或投合大眾趣味。</p>
+</blockquote>
+<hr>
+<h2 id="第八章-沈从文"><a href="#第八章-沈从文" class="headerlink" title="第八章 沈从文"></a>第八章 沈从文</h2><blockquote>
+<p>沈從文在中國文學上的重要性，當然不單止建築在他的枇評文字和諷刺作品上，也不是因爲他提倡純樸的英雄式生活的緣故。他對現代中國文學和生活方式的批評，固然非常中肯，非常有見地；他對人類精神價値的確定，固然切中時害——但造成他今天這個重要地位的，卻是他豐富的想像力和對藝術的摯誠。</p>
+</blockquote>
+<blockquote>
+<p>在他成熟的時期，他對幾種不同文體的運用，可說已到隨心所欲的境界。計有玲瓏剔透牧歌式的文體，裏面的山水人物，呼之欲出；這是沈從文最拿手的文體，而「邊城」是最完善的代表作。此外還有受了佛家故事影響的敍述體，筆調簡潔生動。最後値得一提的是他模彷西方句法成功後的文體（他早期也模仿過，但不成功，這點我們在前面提過了）。</p>
+</blockquote>
+<blockquote>
+<p>當然，沈從文的文體和他的「田園視景」是整體的，不可劃分的，因爲這二者同是一種高度智慧的表現，一種「靜候天機，物我同心」式創造力（negative capability)之產品。能把一棵樹的獨特形態寫好、能把一個舟子和一個少女樸實無華的語言、忠厚的人格和心態歷歷勾劃出來，這種才華，就是寫實的才華。雖然沈從文受了自己道德信念的約束，好像覺得非寫鄕土人情不可，我個人卻認爲，最能表現他長處的，倒是他那種憑着特好的記憶，隨意寫出來的景物和事件。他是中國現代文學中最偉大的印象主義者。他能不着痕跡，輕輕的幾筆就把一個景色的神髓，或者是人類微妙的感情脈絡勾劃出來。他在這一方面的功夫，直追中國的大詩人和大畫家，現代文學作家中，沒有一個人及得上他。</p>
+</blockquote>
+<hr>
+<h2 id="第九章-张天翼"><a href="#第九章-张天翼" class="headerlink" title="第九章 张天翼"></a>第九章 张天翼</h2><h2 id="第十章-巴金"><a href="#第十章-巴金" class="headerlink" title="第十章 巴金"></a>第十章 巴金</h2><h2 id="第十一章-第一阶段的共产小说"><a href="#第十一章-第一阶段的共产小说" class="headerlink" title="第十一章 第一阶段的共产小说"></a>第十一章 第一阶段的共产小说</h2><h2 id="第十二章"><a href="#第十二章" class="headerlink" title="第十二章"></a>第十二章</h2><h2 id="第十三章-抗战期间及胜利以后的中国文学"><a href="#第十三章-抗战期间及胜利以后的中国文学" class="headerlink" title="第十三章 抗战期间及胜利以后的中国文学"></a>第十三章 抗战期间及胜利以后的中国文学</h2><h2 id="第十四章-资深作家"><a href="#第十四章-资深作家" class="headerlink" title="第十四章 资深作家"></a>第十四章 资深作家</h2><h2 id="第十五章-张爱玲"><a href="#第十五章-张爱玲" class="headerlink" title="第十五章 张爱玲"></a>第十五章 张爱玲</h2><blockquote>
+<p>憑張愛玲靈敏的頭腦和對於感覺快感的愛好，她小說裏意象的豐富，在中國現代小說家中可以說是首屈一指。錢鍾書善用巧妙的譬喩，沈從文善寫山明水秀的鄕村風景；他們在描寫方面，可以和張愛玲比擬，但是他們的觀察範圍，較爲狹小。（講起風格和意象，「秧歌」和r傳奇」又稍有不同，這點以後再討論。）張愛玲在r傳奇」裏所描寫的世界，上起清末，下迄中日戰爭；這世界裏面的房屋、家具、服裝等等，都整齊而完備。她的視覺的想像，有時候可以達到濟慈那樣華麗的程度。至少她的女角所穿的衣服，差不多每個人都經她詳細描寫。自從「紅樓夢」以來，中國小說恐怕還沒有一部對闉閣下過這樣一番寫實的功夫。但是r紅樓夢」所寫的是一個靜止的社會，道德標準和女人服裝從卷首到卷尾，都沒有變遷。張愛玲所寫的是個變動的社會，生活在變，思想在變，行爲在變，所不變者只是每個人的自私，和偶然表現出來足以補救自私的同情心而已。她的意象不僅強調優美和醜惡的對比，也讓人看到在顯然不斷變更的物質環填中，中國人行爲方式的持續性。她有強烈的歷史意識，她認識過去如何影響着現在——這種看法是近代人的看法。</p>
+</blockquote>
+<blockquote>
+<p>張愛玲短篇小說的特色，作一個籠統的介紹。她的意象的繁復和豐富，她的歷史感，她的處理人情風俗的熟練，她對於人的性格的深刻的揭發。</p>
+</blockquote>
+<blockquote>
+<p>「金鎖記」長達五十頁；據我看來，這是中國從古以來最偉大的中篇小說。這篇小說的敍事方法和文章風格很明顯的受了中國舊小說的影響。但是中國舊小說可能任意道來，隨隨便便，不夠謹嚴。「金鎖記」的道德意義和心理描寫，卻極盡深刻之能事。從這點看來，作者還是受西洋小說的影響爲多。</p>
+</blockquote>
+<blockquote>
+<p>張愛玲正視心理的事實，而且她在情感上把握住了中國歷史上那一個時代。她對於那時代的人情風俗的正確的了解，不單是自然主義客觀描寫的成功：她於認識之外，更有強烈的情感——她感覺到那時代的可愛與可怕。張愛玲喜歡描寫舊時上流階級的沒落，她的情感一方面是因害怕而驚退，一方面是多少有點留戀。</p>
+</blockquote>
+<hr>
+<h2 id="第十六章-钱钟书"><a href="#第十六章-钱钟书" class="headerlink" title="第十六章 钱钟书"></a>第十六章 钱钟书</h2><blockquote>
+<p>錢鍾書小說的兩大特色——譏諷知識份子、心理描寫。</p>
+</blockquote>
+<blockquote>
+<p>「圍城」是中國近代文學中最有趣和最用心經營的小說，可能亦是最偉大的一部。作爲諷刺文學，它令人想起像r儒林外史」那一類的著名中國古典小說；但它比它們優勝，因爲它有統一的結耩和更豐富的喜劇性。和牽涉眾多人物而結構鬆懈的r懦林外史」有別，「圍城」是一篇稱得上是「浪蕩漢」（picaresquehero)的喜劇旅程錄。</p>
+</blockquote>
+<blockquote>
+<p>一本小說之優劣，當然不能以主題的深淺來評價；最要緊的關鍵是這個主題是否得到適當的處理。</p>
+</blockquote>
+<hr>
+<h2 id="第十七章-师陀"><a href="#第十七章-师陀" class="headerlink" title="第十七章 师陀"></a>第十七章 师陀</h2><h2 id="第十八章-第二阶段的共产小说"><a href="#第十八章-第二阶段的共产小说" class="headerlink" title="第十八章 第二阶段的共产小说"></a>第十八章 第二阶段的共产小说</h2><h3 id="丁玲"><a href="#丁玲" class="headerlink" title="丁玲"></a>丁玲</h3><h3 id="赵树理"><a href="#赵树理" class="headerlink" title="赵树理"></a>赵树理</h3><h2 id="第十九章-结论"><a href="#第十九章-结论" class="headerlink" title="第十九章 结论"></a>第十九章 结论</h2>
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            吕泳宏(Yonghong Lv)
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2023/12/14/%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%B0%8F%E8%AF%B4%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+            http://example.com/2023/12/14/%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%B0%8F%E8%AF%B4%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2023/11/16/%E3%80%8A%E4%B8%96%E7%95%8C%E7%94%B5%E5%BD%B1%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">下一篇</div>
+          
+            <div class="nav-title">《世界电影史》读书笔记 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%B2%81%E8%BF%85%EF%BC%88%E5%91%A8%E6%A0%91%E4%BA%BA%EF%BC%89"><span class="toc-text">第二章 鲁迅（周树人）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B6%E7%BB%8D%E9%92%A7"><span class="toc-text">叶绍钧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B0%E5%BF%83"><span class="toc-text">冰心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8C%E4%B9%A6%E5%8D%8E"><span class="toc-text">凌书华</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%B8%E5%9C%B0%E5%B1%B1"><span class="toc-text">许地山</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%AD%E6%B2%AB%E8%8B%A5"><span class="toc-text">郭沫若</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%81%E8%BE%BE%E5%A4%AB"><span class="toc-text">郁达夫</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-text">第五章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E8%AF%AD%E5%A0%82"><span class="toc-text">林语堂</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8C%85%E7%9B%BE%EF%BC%88%E6%B2%88%E9%9B%81%E5%86%B0%EF%BC%89"><span class="toc-text">茅盾（沈雁冰）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%80%81%E8%88%8D"><span class="toc-text">第七章 老舍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%B2%88%E4%BB%8E%E6%96%87"><span class="toc-text">第八章 沈从文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%BC%A0%E5%A4%A9%E7%BF%BC"><span class="toc-text">第九章 张天翼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E5%B7%B4%E9%87%91"><span class="toc-text">第十章 巴金</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十一章 第一阶段的共产小说</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0"><span class="toc-text">第十二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E6%8A%97%E6%88%98%E6%9C%9F%E9%97%B4%E5%8F%8A%E8%83%9C%E5%88%A9%E4%BB%A5%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6"><span class="toc-text">第十三章 抗战期间及胜利以后的中国文学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E8%B5%84%E6%B7%B1%E4%BD%9C%E5%AE%B6"><span class="toc-text">第十四章 资深作家</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0-%E5%BC%A0%E7%88%B1%E7%8E%B2"><span class="toc-text">第十五章 张爱玲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0-%E9%92%B1%E9%92%9F%E4%B9%A6"><span class="toc-text">第十六章 钱钟书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0-%E5%B8%88%E9%99%80"><span class="toc-text">第十七章 师陀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十八章 第二阶段的共产小说</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%81%E7%8E%B2"><span class="toc-text">丁玲</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%B5%E6%A0%91%E7%90%86"><span class="toc-text">赵树理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0-%E7%BB%93%E8%AE%BA"><span class="toc-text">第十九章 结论</span></a></li></ol>
+</div></main>
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="/imag/我的头像.jpg" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">吕泳宏(Yonghong Lv)</p>
+<p class="author-description">西南财经大学经济学基地班本科毕业，天津大学应届硕士，追求极致客观、极致完美，近7年高等教育生涯中，创业、竞赛、学术、学生工作面面俱到，却无法在任何一项中找到属于自己的归属，在度过了一段闭塞、艰涩、苦闷的硕士生活后，对精英主义、形式主义、功利主义深恶痛绝，逐渐掉进了虚无主义的漩涡中，目前居宅家中，试图自我拯救。</p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>19</span>
+    <span>文章</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>6</span>
+    <span>分类</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>6</span>
+    <span>标签</span>
+  </a>
+</div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%B2%81%E8%BF%85%EF%BC%88%E5%91%A8%E6%A0%91%E4%BA%BA%EF%BC%89"><span class="toc-text">第二章 鲁迅（周树人）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B6%E7%BB%8D%E9%92%A7"><span class="toc-text">叶绍钧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B0%E5%BF%83"><span class="toc-text">冰心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8C%E4%B9%A6%E5%8D%8E"><span class="toc-text">凌书华</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%B8%E5%9C%B0%E5%B1%B1"><span class="toc-text">许地山</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%AD%E6%B2%AB%E8%8B%A5"><span class="toc-text">郭沫若</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%81%E8%BE%BE%E5%A4%AB"><span class="toc-text">郁达夫</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-text">第五章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E8%AF%AD%E5%A0%82"><span class="toc-text">林语堂</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8C%85%E7%9B%BE%EF%BC%88%E6%B2%88%E9%9B%81%E5%86%B0%EF%BC%89"><span class="toc-text">茅盾（沈雁冰）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%80%81%E8%88%8D"><span class="toc-text">第七章 老舍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%B2%88%E4%BB%8E%E6%96%87"><span class="toc-text">第八章 沈从文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%BC%A0%E5%A4%A9%E7%BF%BC"><span class="toc-text">第九章 张天翼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E5%B7%B4%E9%87%91"><span class="toc-text">第十章 巴金</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十一章 第一阶段的共产小说</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0"><span class="toc-text">第十二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E6%8A%97%E6%88%98%E6%9C%9F%E9%97%B4%E5%8F%8A%E8%83%9C%E5%88%A9%E4%BB%A5%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6"><span class="toc-text">第十三章 抗战期间及胜利以后的中国文学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E8%B5%84%E6%B7%B1%E4%BD%9C%E5%AE%B6"><span class="toc-text">第十四章 资深作家</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0-%E5%BC%A0%E7%88%B1%E7%8E%B2"><span class="toc-text">第十五章 张爱玲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0-%E9%92%B1%E9%92%9F%E4%B9%A6"><span class="toc-text">第十六章 钱钟书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0-%E5%B8%88%E9%99%80"><span class="toc-text">第十七章 师陀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十八章 第二阶段的共产小说</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%81%E7%8E%B2"><span class="toc-text">丁玲</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%B5%E6%A0%91%E7%90%86"><span class="toc-text">赵树理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0-%E7%BB%93%E8%AE%BA"><span class="toc-text">第十九章 结论</span></a></li></ol>
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>分类
+  </div>
+  <div class="categories-list">
+    
+      <a href="/categories/2022%E5%B9%B44%E6%9C%88/">
+        <div class="categories-list-item">
+          2022年4月
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <div class="categories-list-item">
+          《管理咨询》学习笔记
+          <span class="categories-list-item-badge">5</span>
+        </div>
+      </a>
+    
+      <a href="/categories/CPA%E7%9B%B8%E5%85%B3/">
+        <div class="categories-list-item">
+          CPA相关
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/IT%E6%8A%80%E8%83%BD%E7%BB%83%E4%B9%A0/">
+        <div class="categories-list-item">
+          IT技能练习
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%88%9B%E4%B8%9A%E7%81%B5%E6%84%9F%E8%AE%B0%E5%BD%95/">
+        <div class="categories-list-item">
+          创业灵感记录
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E8%B5%84%E6%96%99%E5%A4%87%E4%BB%BD/">
+        <div class="categories-list-item">
+          资料备份
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>热门标签
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86/" 
+        title="经济管理">
+        <div class="tags-list-item">经济管理</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" 
+        title="读书笔记">
+        <div class="tags-list-item">读书笔记</div>
+      </a>
+    
+      <a 
+        href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD%E5%8D%8F%E4%BC%9A/" 
+        title="野生技能协会">
+        <div class="tags-list-item">野生技能协会</div>
+      </a>
+    
+      <a 
+        href="/tags/%E2%80%98%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%99/" 
+        title="‘读书笔记’">
+        <div class="tags-list-item">‘读书笔记’</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%B5%84%E6%96%99%E5%A4%87%E4%BB%BD/" 
+        title="资料备份">
+        <div class="tags-list-item">资料备份</div>
+      </a>
+    
+      <a 
+        href="/tags/Reading-Minutes/" 
+        title="Reading Minutes">
+        <div class="tags-list-item">Reading Minutes</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%B2%81%E8%BF%85%EF%BC%88%E5%91%A8%E6%A0%91%E4%BA%BA%EF%BC%89"><span class="toc-text">第二章 鲁迅（周树人）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B6%E7%BB%8D%E9%92%A7"><span class="toc-text">叶绍钧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%B0%E5%BF%83"><span class="toc-text">冰心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8C%E4%B9%A6%E5%8D%8E"><span class="toc-text">凌书华</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%B8%E5%9C%B0%E5%B1%B1"><span class="toc-text">许地山</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%AD%E6%B2%AB%E8%8B%A5"><span class="toc-text">郭沫若</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%81%E8%BE%BE%E5%A4%AB"><span class="toc-text">郁达夫</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-text">第五章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%97%E8%AF%AD%E5%A0%82"><span class="toc-text">林语堂</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8C%85%E7%9B%BE%EF%BC%88%E6%B2%88%E9%9B%81%E5%86%B0%EF%BC%89"><span class="toc-text">茅盾（沈雁冰）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E8%80%81%E8%88%8D"><span class="toc-text">第七章 老舍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%B2%88%E4%BB%8E%E6%96%87"><span class="toc-text">第八章 沈从文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%BC%A0%E5%A4%A9%E7%BF%BC"><span class="toc-text">第九章 张天翼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E5%B7%B4%E9%87%91"><span class="toc-text">第十章 巴金</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十一章 第一阶段的共产小说</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0"><span class="toc-text">第十二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E6%8A%97%E6%88%98%E6%9C%9F%E9%97%B4%E5%8F%8A%E8%83%9C%E5%88%A9%E4%BB%A5%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6"><span class="toc-text">第十三章 抗战期间及胜利以后的中国文学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E8%B5%84%E6%B7%B1%E4%BD%9C%E5%AE%B6"><span class="toc-text">第十四章 资深作家</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0-%E5%BC%A0%E7%88%B1%E7%8E%B2"><span class="toc-text">第十五章 张爱玲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0-%E9%92%B1%E9%92%9F%E4%B9%A6"><span class="toc-text">第十六章 钱钟书</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0-%E5%B8%88%E9%99%80"><span class="toc-text">第十七章 师陀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E7%9A%84%E5%85%B1%E4%BA%A7%E5%B0%8F%E8%AF%B4"><span class="toc-text">第十八章 第二阶段的共产小说</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%81%E7%8E%B2"><span class="toc-text">丁玲</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%B5%E6%A0%91%E7%90%86"><span class="toc-text">赵树理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0-%E7%BB%93%E8%AE%BA"><span class="toc-text">第十九章 结论</span></a></li></ol>
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>最近文章
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-12-14</div>
+        <a href="/2023/12/14/%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%B0%8F%E8%AF%B4%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《中国现代小说史》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-11-16</div>
+        <a href="/2023/11/16/%E3%80%8A%E4%B8%96%E7%95%8C%E7%94%B5%E5%BD%B1%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《世界电影史》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-10-22</div>
+        <a href="/2023/10/22/%E8%90%A8%E7%BC%AA%E5%B0%94%E6%A3%AE%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%EF%BC%88%E7%AC%AC%E4%B9%9D%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">萨缪尔森《经济学（第十九版）》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-10-22</div>
+        <a href="/2023/10/22/%E3%80%8A%E5%9B%BD%E5%AF%8C%E8%AE%BA%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《国富论》读书笔记</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020 -
+          
+          2023
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          吕泳宏的个人博客
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer> 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+     
+    
+    
+  </body>
+</html>
