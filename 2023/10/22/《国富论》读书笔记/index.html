@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="吕泳宏的个人博客">
+  <link 
+    rel="icon" 
+    href="/imag/star.png">
+  <title>《国富论》读书笔记</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="《国富论》读书笔记">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2023/10/22/%E3%80%8A%E5%9B%BD%E5%AF%8C%E8%AE%BA%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="/imag/我的头像.jpg">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2023-10-22">
+      <meta 
+        property="og:article:modified_time" 
+        content="2023-10-28">
+      <meta 
+        property="og:article:author" 
+        content="吕泳宏(Yonghong Lv)">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="‘读书笔记’">
+        
+      
+    
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/imag/star.png" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">吕泳宏的个人博客</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          首页
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          归档
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          标签
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          分类
+        
+      </a>
+    
+      <a 
+        href="/about" 
+        class="navbar-menu-item">
+        
+          关于
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          友链
+        
+      </a>
+    
+    <a 
+      class="navbar-menu-item darknavbar" 
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </a>
+    <a 
+      class="navbar-menu-item searchnavbar" 
+      id="search">
+      <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i>
+    </a>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      《国富论》读书笔记
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2023-10-22T09:23:18.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2023-10-22</span>
+    </time>
+    
+    
+      <span class="dot"></span>
+      <span>1.4k 字</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/%E2%80%98%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%99/" 
+            class="post-meta-link">
+            ‘读书笔记’
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <blockquote>
+<p>商务印书馆《国富论》，根据牛津大学1880年版译出，郭大力、王亚南等翻译。<br>学习经济学不一定要读斯密的《国富论》，基于社会背景局限性，其观点较为陈旧，仅用文字进行说理的方法单一繁杂，长篇大作耗费时间较长，个人建议若时间不多，选读，并将体会其中哲学+经济学的说理作为重点。</p>
+</blockquote>
+<p><strong>阅读前参考：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36442891">读《国富论》到底对我们有什么用？</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/360267319">读书笔记：《国富论》</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/550634593">国富论—小白能读懂《国富论》吗</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/415384690/answer/1489299088">实在看不下去《国富论》怎么办？</a><h2 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h2>###第九章 论资本利润<br>劳动工资越高，市场资本利率越低，但在新兴市场或新兴国家存在两者均大的特殊情况，这意味着旧市场中的资本会因资本利率低、工资高而离场，转向资本利率高、工资低的新市场中，进而引导旧市场竞争水平降低。</li>
+</ul>
+<p>市场利率 &#x3D; 普通利率 + 危机情形下补偿</p>
+<p>存在资本利率上限</p>
+<p>利率对物价的提升作用（级数增长）远远高于劳动工资对物价的提升作用（几何增长）效果。</p>
+<h3 id="第十章-论工资与利润随劳动与资本用途的不同而不同"><a href="#第十章-论工资与利润随劳动与资本用途的不同而不同" class="headerlink" title="第十章 论工资与利润随劳动与资本用途的不同而不同"></a>第十章 论工资与利润随劳动与资本用途的不同而不同</h3><p>工资趋于相同<br>货币工资和货币利润不同的原因包括职业本身性质的不均等和政策的不均等。<br>前者具体包括：职业本身愉快&#x2F;不愉快；学习难易程度不同，学费多&#x2F;少；工作安定&#x2F;不安定；责任重&#x2F;轻；成功可能性大&#x2F;小。<br>后者具体包括：限制竞争人数；增加其他职业的竞争（设置奖金、助学金、贫苦学生津贴等）；限制劳动和资本自由活动。比如，同业组合法规，长期学徒制度不利于养成少年人的勤劳习惯，也并不能保证市场上不常出现不良作品<br>斯密反对设置各种奖学金，认为在自由市场下，水泥工的工资并不弱于法律等高学费工资，而奖学金会增加某些高学费职业的竞争，使公职教师工资降低。</p>
+<h3 id="第十一章-论地租"><a href="#第十一章-论地租" class="headerlink" title="第十一章 论地租"></a>第十一章 论地租</h3><p>地租是结果，而非原因，可以分为必然提供地租的生产物（粮食）和可能提供地租的生产物（衣料、住房）。<br>粮食供给提升，提供了更多富余食物，催生出对其他非粮食生产物的需求，进而提高白银市场需求，而白银价格涨跌则取决于白银市场供需平衡。<br>关于金银价格：金银价格的高低与国家经济实力没有必然关系，但是</p>
+<p>关于改良对真实价格的影响：一切社会状况改良都趋向于直接或间接使土地真实地租上升，使地主的真实财富增大，使地主对他人的劳动或劳动生产物有更大的购买力。<br>而有些制造品从改良上得到的利益并不能抵偿其原料真实价值的增高，否则制造品真实价值一定会大大跌落。</p>
+<p>一国年产物的全部价值&#x3D;土地地租+劳动工资+资本利润&#x3D;地主阶级利益+劳动阶级利益+劳动者雇主阶级利益</p>
+<h2 id="第二篇-论资财的性质及其蓄积和用途"><a href="#第二篇-论资财的性质及其蓄积和用途" class="headerlink" title="第二篇 论资财的性质及其蓄积和用途"></a>第二篇 论资财的性质及其蓄积和用途</h2><h3 id="第一章-论资财的划分"><a href="#第一章-论资财的划分" class="headerlink" title="第一章 论资财的划分"></a>第一章 论资财的划分</h3><p>个人资财&#x3D;资本+消费，<br>其中，消费 &#x3D; 原为这目的而保留的那部分资产+逐渐得来的收入+用以上两项于以前买进来却至今尚未用完的物品</p>
+<p>资本用途包括：①流动资本：生产、制造、购买物品，并卖出去以获得利润；②固定资本：或用于改良土地，购买机器或工具，或用来置备无须易主或无须进一步流通即可提供利润的东西。</p>
+<p>国家&#x2F;社会总资财&#x3D;供目前消费+固定资本+流动资本，<br>其中，①供目前消费的资财不提供利润或收入；<br>②固定资本包括有用的机器工具、有利可取的建筑物、土地改良费、社会上一切人民学到的有用才能；<br>③流动资本包括货币，屠户、农业加家、酿酒商等人所有的食物，在制造者手中衣服、家具、房屋的材料，已经制成，但仍在制造者或商人手中未卖给或分配给真正消费者的物品，后三者（食品、材料、制成品）会在一年即更短期间内从流动资本转换为固定资本， 而四种流动资本亦需要不断补充。</p>
+<h3 id="第二章-论作为社会总资财的一部门或作为维持国民资本的费用的货币"><a href="#第二章-论作为社会总资财的一部门或作为维持国民资本的费用的货币" class="headerlink" title="第二章 论作为社会总资财的一部门或作为维持国民资本的费用的货币"></a>第二章 论作为社会总资财的一部门或作为维持国民资本的费用的货币</h3><p>关于银行：银行的费用包括房租、用人、办事员、会计员工资等经费；应付持票兑换等不时要求的储备或补充。纸币能无阻碍流通的全部金额不难超过其所代替的金银的价值，溢出部分会全数流回银行兑现，不仅无利，还会增加银行储备金和处理经费，溢出部分付出的金银，循环借款。</p>
+<h3 id="第三章-论资本积累并论生产性和非生产性劳动"><a href="#第三章-论资本积累并论生产性和非生产性劳动" class="headerlink" title="第三章 论资本积累并论生产性和非生产性劳动"></a>第三章 论资本积累并论生产性和非生产性劳动</h3><h3 id="第四章-论贷出取息的资产"><a href="#第四章-论贷出取息的资产" class="headerlink" title="第四章 论贷出取息的资产"></a>第四章 论贷出取息的资产</h3><h3 id="第五章-论资财的划分"><a href="#第五章-论资财的划分" class="headerlink" title="第五章 论资财的划分"></a>第五章 论资财的划分</h3><h2 id="第三篇-论不同国家中财富的不同发展"><a href="#第三篇-论不同国家中财富的不同发展" class="headerlink" title="第三篇 论不同国家中财富的不同发展"></a>第三篇 论不同国家中财富的不同发展</h2>
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            吕泳宏(Yonghong Lv)
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2023/10/22/%E3%80%8A%E5%9B%BD%E5%AF%8C%E8%AE%BA%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+            http://example.com/2023/10/22/%E3%80%8A%E5%9B%BD%E5%AF%8C%E8%AE%BA%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+    <div class="nav-item-prev">
+      <a 
+        href="/2023/10/22/%E8%90%A8%E7%BC%AA%E5%B0%94%E6%A3%AE%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%EF%BC%88%E7%AC%AC%E4%B9%9D%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" 
+        class="nav-link">
+        <i class="iconfont icon-left nav-prev-icon"></i>
+        <div>
+          <div class="nav-label">上一篇</div>
+          
+            <div class="nav-title">萨缪尔森《经济学（第十九版）》读书笔记 </div>
+          
+        </div>
+      </a>
+    </div>
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2023/10/10/%E3%80%8A%E6%96%87%E6%98%8E%E7%9A%84%E5%86%B2%E7%AA%81%E4%B8%8E%E4%B8%96%E7%95%8C%E7%A7%A9%E5%BA%8F%E7%9A%84%E9%87%8D%E5%BB%BA%E3%80%8B/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">下一篇</div>
+          
+            <div class="nav-title">《文明的冲突与世界秩序的重建》读书笔记 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AF%87"><span class="toc-text">第一篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%AE%BA%E5%B7%A5%E8%B5%84%E4%B8%8E%E5%88%A9%E6%B6%A6%E9%9A%8F%E5%8A%B3%E5%8A%A8%E4%B8%8E%E8%B5%84%E6%9C%AC%E7%94%A8%E9%80%94%E7%9A%84%E4%B8%8D%E5%90%8C%E8%80%8C%E4%B8%8D%E5%90%8C"><span class="toc-text">第十章 论工资与利润随劳动与资本用途的不同而不同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E8%AE%BA%E5%9C%B0%E7%A7%9F"><span class="toc-text">第十一章 论地租</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E6%80%A7%E8%B4%A8%E5%8F%8A%E5%85%B6%E8%93%84%E7%A7%AF%E5%92%8C%E7%94%A8%E9%80%94"><span class="toc-text">第二篇 论资财的性质及其蓄积和用途</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第一章 论资财的划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%AE%BA%E4%BD%9C%E4%B8%BA%E7%A4%BE%E4%BC%9A%E6%80%BB%E8%B5%84%E8%B4%A2%E7%9A%84%E4%B8%80%E9%83%A8%E9%97%A8%E6%88%96%E4%BD%9C%E4%B8%BA%E7%BB%B4%E6%8C%81%E5%9B%BD%E6%B0%91%E8%B5%84%E6%9C%AC%E7%9A%84%E8%B4%B9%E7%94%A8%E7%9A%84%E8%B4%A7%E5%B8%81"><span class="toc-text">第二章 论作为社会总资财的一部门或作为维持国民资本的费用的货币</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%AE%BA%E8%B5%84%E6%9C%AC%E7%A7%AF%E7%B4%AF%E5%B9%B6%E8%AE%BA%E7%94%9F%E4%BA%A7%E6%80%A7%E5%92%8C%E9%9D%9E%E7%94%9F%E4%BA%A7%E6%80%A7%E5%8A%B3%E5%8A%A8"><span class="toc-text">第三章 论资本积累并论生产性和非生产性劳动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%AE%BA%E8%B4%B7%E5%87%BA%E5%8F%96%E6%81%AF%E7%9A%84%E8%B5%84%E4%BA%A7"><span class="toc-text">第四章 论贷出取息的资产</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第五章 论资财的划分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AF%87-%E8%AE%BA%E4%B8%8D%E5%90%8C%E5%9B%BD%E5%AE%B6%E4%B8%AD%E8%B4%A2%E5%AF%8C%E7%9A%84%E4%B8%8D%E5%90%8C%E5%8F%91%E5%B1%95"><span class="toc-text">第三篇 论不同国家中财富的不同发展</span></a></li></ol>
+</div></main>
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="/imag/我的头像.jpg" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">吕泳宏(Yonghong Lv)</p>
+<p class="author-description">西南财经大学经济学基地班本科毕业，天津大学应届硕士，追求极致客观、极致完美，近7年高等教育生涯中，创业、竞赛、学术、学生工作面面俱到，却无法在任何一项中找到属于自己的归属，在度过了一段闭塞、艰涩、苦闷的硕士生活后，对精英主义、形式主义、功利主义深恶痛绝，逐渐掉进了虚无主义的漩涡中，目前居宅家中，试图自我拯救。</p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>19</span>
+    <span>文章</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>6</span>
+    <span>分类</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>6</span>
+    <span>标签</span>
+  </a>
+</div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AF%87"><span class="toc-text">第一篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%AE%BA%E5%B7%A5%E8%B5%84%E4%B8%8E%E5%88%A9%E6%B6%A6%E9%9A%8F%E5%8A%B3%E5%8A%A8%E4%B8%8E%E8%B5%84%E6%9C%AC%E7%94%A8%E9%80%94%E7%9A%84%E4%B8%8D%E5%90%8C%E8%80%8C%E4%B8%8D%E5%90%8C"><span class="toc-text">第十章 论工资与利润随劳动与资本用途的不同而不同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E8%AE%BA%E5%9C%B0%E7%A7%9F"><span class="toc-text">第十一章 论地租</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E6%80%A7%E8%B4%A8%E5%8F%8A%E5%85%B6%E8%93%84%E7%A7%AF%E5%92%8C%E7%94%A8%E9%80%94"><span class="toc-text">第二篇 论资财的性质及其蓄积和用途</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第一章 论资财的划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%AE%BA%E4%BD%9C%E4%B8%BA%E7%A4%BE%E4%BC%9A%E6%80%BB%E8%B5%84%E8%B4%A2%E7%9A%84%E4%B8%80%E9%83%A8%E9%97%A8%E6%88%96%E4%BD%9C%E4%B8%BA%E7%BB%B4%E6%8C%81%E5%9B%BD%E6%B0%91%E8%B5%84%E6%9C%AC%E7%9A%84%E8%B4%B9%E7%94%A8%E7%9A%84%E8%B4%A7%E5%B8%81"><span class="toc-text">第二章 论作为社会总资财的一部门或作为维持国民资本的费用的货币</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%AE%BA%E8%B5%84%E6%9C%AC%E7%A7%AF%E7%B4%AF%E5%B9%B6%E8%AE%BA%E7%94%9F%E4%BA%A7%E6%80%A7%E5%92%8C%E9%9D%9E%E7%94%9F%E4%BA%A7%E6%80%A7%E5%8A%B3%E5%8A%A8"><span class="toc-text">第三章 论资本积累并论生产性和非生产性劳动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%AE%BA%E8%B4%B7%E5%87%BA%E5%8F%96%E6%81%AF%E7%9A%84%E8%B5%84%E4%BA%A7"><span class="toc-text">第四章 论贷出取息的资产</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第五章 论资财的划分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AF%87-%E8%AE%BA%E4%B8%8D%E5%90%8C%E5%9B%BD%E5%AE%B6%E4%B8%AD%E8%B4%A2%E5%AF%8C%E7%9A%84%E4%B8%8D%E5%90%8C%E5%8F%91%E5%B1%95"><span class="toc-text">第三篇 论不同国家中财富的不同发展</span></a></li></ol>
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>分类
+  </div>
+  <div class="categories-list">
+    
+      <a href="/categories/2022%E5%B9%B44%E6%9C%88/">
+        <div class="categories-list-item">
+          2022年4月
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E3%80%8A%E7%AE%A1%E7%90%86%E5%92%A8%E8%AF%A2%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <div class="categories-list-item">
+          《管理咨询》学习笔记
+          <span class="categories-list-item-badge">5</span>
+        </div>
+      </a>
+    
+      <a href="/categories/CPA%E7%9B%B8%E5%85%B3/">
+        <div class="categories-list-item">
+          CPA相关
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/IT%E6%8A%80%E8%83%BD%E7%BB%83%E4%B9%A0/">
+        <div class="categories-list-item">
+          IT技能练习
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%88%9B%E4%B8%9A%E7%81%B5%E6%84%9F%E8%AE%B0%E5%BD%95/">
+        <div class="categories-list-item">
+          创业灵感记录
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E8%B5%84%E6%96%99%E5%A4%87%E4%BB%BD/">
+        <div class="categories-list-item">
+          资料备份
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>热门标签
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86/" 
+        title="经济管理">
+        <div class="tags-list-item">经济管理</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" 
+        title="读书笔记">
+        <div class="tags-list-item">读书笔记</div>
+      </a>
+    
+      <a 
+        href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD%E5%8D%8F%E4%BC%9A/" 
+        title="野生技能协会">
+        <div class="tags-list-item">野生技能协会</div>
+      </a>
+    
+      <a 
+        href="/tags/%E2%80%98%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%99/" 
+        title="‘读书笔记’">
+        <div class="tags-list-item">‘读书笔记’</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%B5%84%E6%96%99%E5%A4%87%E4%BB%BD/" 
+        title="资料备份">
+        <div class="tags-list-item">资料备份</div>
+      </a>
+    
+      <a 
+        href="/tags/Reading-Minutes/" 
+        title="Reading Minutes">
+        <div class="tags-list-item">Reading Minutes</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AF%87"><span class="toc-text">第一篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E8%AE%BA%E5%B7%A5%E8%B5%84%E4%B8%8E%E5%88%A9%E6%B6%A6%E9%9A%8F%E5%8A%B3%E5%8A%A8%E4%B8%8E%E8%B5%84%E6%9C%AC%E7%94%A8%E9%80%94%E7%9A%84%E4%B8%8D%E5%90%8C%E8%80%8C%E4%B8%8D%E5%90%8C"><span class="toc-text">第十章 论工资与利润随劳动与资本用途的不同而不同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E8%AE%BA%E5%9C%B0%E7%A7%9F"><span class="toc-text">第十一章 论地租</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E6%80%A7%E8%B4%A8%E5%8F%8A%E5%85%B6%E8%93%84%E7%A7%AF%E5%92%8C%E7%94%A8%E9%80%94"><span class="toc-text">第二篇 论资财的性质及其蓄积和用途</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第一章 论资财的划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E8%AE%BA%E4%BD%9C%E4%B8%BA%E7%A4%BE%E4%BC%9A%E6%80%BB%E8%B5%84%E8%B4%A2%E7%9A%84%E4%B8%80%E9%83%A8%E9%97%A8%E6%88%96%E4%BD%9C%E4%B8%BA%E7%BB%B4%E6%8C%81%E5%9B%BD%E6%B0%91%E8%B5%84%E6%9C%AC%E7%9A%84%E8%B4%B9%E7%94%A8%E7%9A%84%E8%B4%A7%E5%B8%81"><span class="toc-text">第二章 论作为社会总资财的一部门或作为维持国民资本的费用的货币</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%AE%BA%E8%B5%84%E6%9C%AC%E7%A7%AF%E7%B4%AF%E5%B9%B6%E8%AE%BA%E7%94%9F%E4%BA%A7%E6%80%A7%E5%92%8C%E9%9D%9E%E7%94%9F%E4%BA%A7%E6%80%A7%E5%8A%B3%E5%8A%A8"><span class="toc-text">第三章 论资本积累并论生产性和非生产性劳动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%AE%BA%E8%B4%B7%E5%87%BA%E5%8F%96%E6%81%AF%E7%9A%84%E8%B5%84%E4%BA%A7"><span class="toc-text">第四章 论贷出取息的资产</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AE%BA%E8%B5%84%E8%B4%A2%E7%9A%84%E5%88%92%E5%88%86"><span class="toc-text">第五章 论资财的划分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AF%87-%E8%AE%BA%E4%B8%8D%E5%90%8C%E5%9B%BD%E5%AE%B6%E4%B8%AD%E8%B4%A2%E5%AF%8C%E7%9A%84%E4%B8%8D%E5%90%8C%E5%8F%91%E5%B1%95"><span class="toc-text">第三篇 论不同国家中财富的不同发展</span></a></li></ol>
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>最近文章
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-12-14</div>
+        <a href="/2023/12/14/%E3%80%8A%E4%B8%AD%E5%9B%BD%E7%8E%B0%E4%BB%A3%E5%B0%8F%E8%AF%B4%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《中国现代小说史》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-11-16</div>
+        <a href="/2023/11/16/%E3%80%8A%E4%B8%96%E7%95%8C%E7%94%B5%E5%BD%B1%E5%8F%B2%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《世界电影史》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-10-22</div>
+        <a href="/2023/10/22/%E8%90%A8%E7%BC%AA%E5%B0%94%E6%A3%AE%E3%80%8A%E7%BB%8F%E6%B5%8E%E5%AD%A6%EF%BC%88%E7%AC%AC%E4%B9%9D%E7%89%88%EF%BC%89%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">萨缪尔森《经济学（第十九版）》读书笔记</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2023-10-22</div>
+        <a href="/2023/10/22/%E3%80%8A%E5%9B%BD%E5%AF%8C%E8%AE%BA%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-posts-item-content">《国富论》读书笔记</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020 -
+          
+          2023
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          吕泳宏的个人博客
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer> 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+     
+    
+    
+  </body>
+</html>
